@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Online -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Local -->
+    <link rel="stylesheet" href="./Assets/CSS/base.css">
+    <link rel="stylesheet" href="./Assets/CSS/header.css">
+    <link rel="stylesheet" href="./Assets/CSS/animation.css">
+    <link rel="stylesheet" href="./Assets/CSS/home-page.css">
+
+    <title> Code Master</title>
+</head>
+
+<body>
+
+
+    <div class="bg-cover">
+
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+
+                <a class="navbar-branch" href="./home-page.html">
+                    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/cm-1-logo.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-target="#navbarFullContent" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- navbar Full content -->
+                <div class="collapse navbar-collapse scale-in-ver-top-sm" id="navbarFullContent">
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Dropdown Cac khoa hoc -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Các khoá học
+                            </a>
+
+                            <div class="dropdown-menu scale-in-ver-top" aria-labelledby="dropdown-courses">
+                                <a class="dropdown-item" href=""> Front-end Development</a>
+                                <a class="dropdown-item" href=""> Back-end Development</a>
+                                <a class="dropdown-item" href=""> Mobile Development</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> Về chúng tôi</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> Liên hệ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <button class="btn btn-secondary btn--navbar"> Đăng nhập</button>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <button class="btn btn-primary btn--navbar"> Đăng ký</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div> <!-- container -->
+        </nav> <!-- navbar-expand-lg -->
+
+
+        <!-- Carousel -->
+        <div id="carouselBanner" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#carouselBanner" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselBanner" data-slide-to="1"></li>
+                <li data-target="#carouselBanner" data-slide-to="2"></li>
+                <li data-target="#carouselBanner" data-slide-to="3"></li>
+                <li data-target="#carouselBanner" data-slide-to="4"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel-slide">
+                    <img class=""
+                        src="https://thumbs.dreamstime.com/z/smart-spaces-concept-vector-illustration-futuristic-classroom-little-children-study-high-tech-equipment-school-ai-150130927.jpg"
+                        alt="first-slide">
+                </div>
+
+                <div class="carousel-item carousel-slide">
+                    <img class=""
+                        src="https://png.pngtree.com/illustrations/20190321/ourlarge/pngtree-2-5d-flat-style-high-tech-business-png-image_32707.jpg"
+                        alt="second-slide">
+                </div>
+
+                <div class="carousel-item carousel-slide">
+                    <img class=""
+                        src="https://image.freepik.com/free-vector/online-games-concept-illustration-with-computer_23-2148534483.jpg"
+                        alt="third-slide">
+                </div>
+
+                <div class="carousel-item carousel-slide">
+                    <img class=""
+                        src="https://image.freepik.com/free-vector/website-design-big-data-center-cloud-storage-technology-isometric-illustration-template-website-mobile-website-design-development-creative-concept-easy-edit-customize_126283-1548.jpg"
+                        alt="forth-slide">
+                </div>
+
+                <div class="carousel-item carousel-slide">
+                    <img class=""
+                        src="https://image.freepik.com/free-vector/colorful-illustration-programmer-working_23-2148281409.jpg"
+                        alt="fifth-slide">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselBanner" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselBanner" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div> <!-- carousel -->
+
+
+        <!-- Two Column Section -->
+        <div class="container py-5">
+
+            <!-- Front-end -->
+            <section class="row py-5">
+                <div class="col-md-12 col-lg-6 pb-5">
+                    <h1 class="heading--two-columns-section" data-aos="fade-right"> Trở thành Front-end Developer</h1>
+                    <p data-aos="fade-right" data-aos-delay="200"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum error
+                        vitae iure quos hic quae
+                        voluptatem ullam maxime est eos.</p>
+                    <p data-aos="fade-right" data-aos-delay="700"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+                        deserunt.</p>
+                    <p data-aos="fade-right" data-aos-delay="1000"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                        laudantium asperiores corporis
+                        omnis dolorum, distinctio tempore mollitia at ut ratione voluptatibus cupiditate magni enim
+                        inventore!</p>
+
+                    <div class="d-flex justify-content-center" data-aos="fade-right" data-aos-delay="1700">
+                        <a class="btn btn-primary btn--two-columns-section" href=""> Khám phá thêm</a>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6 d-flex justify-content-center">
+                    <img class="img-fluid img--two-columns-section" src="./Assets/Images/front-end.png" alt="">
+                </div>
+            </section> <!-- Front-end -->
+
+            <!-- Back-end -->
+            <section class="row py-5 flex-column-reverse flex-lg-row">
+                <div class="col-md-12 col-lg-6 d-flex justify-content-center">
+                    <img class="img-fluid img--two-columns-section" src="./Assets/Images/back-end.png" alt="">
+                </div>
+
+                <div class="col-md-12 col-lg-6 pb-5">
+                    <div>
+                        <h1 class="heading--two-columns-section" data-aos="fade-left"> Trở thành Back-end Developer </h1>
+                        <p data-aos="fade-left" data-aos-delay="200"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum error vitae iure quos hic
+                            quae
+                            voluptatem ullam maxime est eos.</p>
+                        <p data-aos="fade-left" data-aos-delay="700"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, deserunt.</p>
+                        <p data-aos="fade-left" data-aos-delay="1000"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus laudantium asperiores
+                            corporis
+                            omnis dolorum, distinctio tempore mollitia at ut ratione voluptatibus cupiditate magni enim
+                            inventore!</p>
+                    </div>
+
+                    <div class="d-flex justify-content-center" data-aos="fade-left" data-aos-delay="1700">
+                        <a class="btn btn-primary btn--two-columns-section" href=""> Khám phá thêm</a>
+                    </div>
+                </div>
+            </section> <!-- Back-end -->
+
+            <!-- Mobile -->
+            <section class="row py-5">
+                <div class="col-md-12 col-lg-6 pb-5">
+                    <h1 class="heading--two-columns-section" data-aos="fade-right"> Trở thành Mobile Developer</h1>
+                    <p data-aos="fade-right" data-aos-delay="200"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum error vitae iure quos hic quae
+                        voluptatem ullam maxime est eos.</p>
+                    <p data-aos="fade-right" data-aos-delay="700"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, deserunt.</p>
+                    <p data-aos="fade-right" data-aos-delay="1000"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus laudantium asperiores corporis
+                        omnis dolorum, distinctio tempore mollitia at ut ratione voluptatibus cupiditate magni enim
+                        inventore!</p>
+
+                    <div class="d-flex justify-content-center" data-aos="fade-right" data-aos-delay="1700">
+                        <a class="btn btn-primary btn--two-columns-section" href=""> Khám phá thêm</a>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6 d-flex justify-content-center">
+                    <img class="img-fluid img--two-columns-section" src="./Assets/Images/mobile.png" alt="">
+                </div>
+            </section> <!-- Mobile -->
+        </div>
+
+
+        <!-- Statitics -->
+        <div class="container py-5">
+            <!-- Row 1 -->
+            <div class="row">
+                <section class="col-6 col-lg-4 p-5 number-card">
+                    <h5> 100%</h5>
+                    <p> Học viên có việc làm sau khi hoàn thành khoá học tại CodeMaster</p>
+                </section>
+    
+                <section class="col-6 col-lg-4 p-5 number-card">
+                    <h5> 1000$</h5>
+                    <p> Là mức lương trung bình nhận được của học viên sau khi hoàn thành khoá học</p>
+                    
+                </section>
+
+                <section class="col-6 col-lg-4 p-5 number-card number-card--bg">
+                    <h5> 200+</h5>
+                    <p> Khoá học đã được mở với nhiều lĩnh vực khác nhau như Web, Mobile, Data Analysis,...</p>
+                </section>
+
+                <section class="col-6 col-lg-4 p-5 number-card number-card--bg">
+                    <h5> 2500+</h5>
+                    <p> Học viên tin tưởng và theo học tại CodeMaster</p>
+                </section>
+    
+                <section class="col-6 col-lg-4 p-5 number-card">
+                    <h5> 300+</h5>
+                    <p> Là số lượng học sinh cấp 3 hoặc nhỏ hơn theo học tại CodeMaster</p>
+                </section>
+
+                <section class="col-6 col-lg-4 p-5 number-card">
+                    <h5> 40%</h5>
+                    <p> Học viên tại CodeMaster học từ 2 khoá trở lên</p>
+                </section>
+
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row"></div>
+
+        </div> <!-- Statitics -->
+
+
+    </div> <!-- bg-cover -->
+
+
+
+
+
+
+    <!-- Bootstrap4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 0,
+            duration: 1000,
+        });
+    </script>
+
+
+</body>
+
+</html>

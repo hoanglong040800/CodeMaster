@@ -1,0 +1,110 @@
+.bg-cover {
+    background: #fdfdfd;
+    background-image: url(../Images/bg_fluid.svg);
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: top center;
+}
+
+/* ---- Carousel Banner ---- */
+
+.carousel-item.active {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    border-radius: 100%;
+    border: 1px solid gray;
+}
+
+.carousel-indicators li.active {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.carousel-item.active {
+    animation: slide-in-right 0.8s ease;
+}
+
+/* ---- Two Column Section ---- */
+
+.heading--two-columns-section {
+    padding: 20px 0;
+}
+
+.btn--two-columns-section {
+    width: 130px;
+    height: 40px;
+    margin: 20px 0;
+    padding: 8px;
+    font-size: 1.2rem;
+}
+
+.btn--two-columns-section:hover {
+    transform: translateY(-3px);
+}
+
+/* Statitics */
+.number-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.number-card:nth-child(odd) {
+    color: #fff;
+    background-image: linear-gradient(90deg, rgba(6, 76, 74, 1) 0%, rgba(3, 140, 159, 0.9) 60%, rgba(45, 172, 179, 0.7587612077484505) 100%), url(https://spectrum.ieee.org/image/MzI4MDQ2Mg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.number-card:nth-child(even) {
+    color: #333;
+    background: none;
+}
+
+/* ---- Media query ---- */
+
+@media (max-width: 575.99px) {
+    .carousel-item>img {
+        height: 300px;
+    }
+}
+
+@media (min-width: 576px) {
+    .carousel-item>img {
+        height: 400px;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (max-width: 991px) {
+    .img--two-columns-section {
+        max-width: 300px;
+    }
+    .number-card--bg:nth-child(even) {
+        color: #fff;
+        background-image: linear-gradient(90deg, rgba(6, 76, 74, 1) 0%, rgba(3, 140, 159, 0.9) 60%, rgba(45, 172, 179, 0.7587612077484505) 100%), url(https://spectrum.ieee.org/image/MzI4MDQ2Mg.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .number-card--bg:nth-child(odd) {
+        color: #333;
+        background: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item>img {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1140px) {}

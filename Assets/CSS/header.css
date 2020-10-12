@@ -1,0 +1,88 @@
+.navbar {
+    font-size: 15px;
+    font-weight: 500;
+    -webkit-box-shadow: 0px 10px 9px -10px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 10px 9px -10px rgba(0, 0, 0, 0.48);
+    box-shadow: 0px 10px 9px -10px rgba(0, 0, 0, 0.48);
+}
+
+.navbar-branch>img {
+    height: 50px;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.dropdown-menu[aria-labelledby="dropdown-courses"] .dropdown-item {
+    font-size: 1.2rem;
+    color: var(--secondary);
+}
+
+.dropdown-menu[aria-labelledby="dropdown-courses"] .dropdown-item:hover {
+    color: #000;
+}
+
+.scale-in-ver-top {
+    -webkit-animation: scale-in-ver-top 0.3s ease-in-out;
+    animation: scale-in-ver-top 0.3s ease-in-out;
+}
+
+.btn--navbar {
+    font-size: 1rem;
+    height: 30px;
+    width: 80px;
+}
+
+/* Media query */
+
+@media (min-width: 992px) {
+    .dropdown:hover>.dropdown-menu[aria-labelledby="dropdown-courses"] {
+        display: block;
+    }
+    .dropdown-menu[aria-labelledby="dropdown-courses"] {
+        padding: 0;
+        top: 130%;
+    }
+    .dropdown-menu[aria-labelledby="dropdown-courses"]:before {
+        content: "";
+        position: absolute;
+        top: -13%;
+        width: 200px;
+        height: 25px;
+        background: transparent;
+    }
+    .dropdown-menu[aria-labelledby="dropdown-courses"] .dropdown-item {
+        padding: 20px 15px 20px 10px;
+        border-bottom: 0.1px solid rgba(128, 128, 128, 0.109);
+    }
+    .dropdown-menu[aria-labelledby="dropdown-courses"] .dropdown-item:last-child {
+        border: none;
+    }
+    .dropdown-menu[aria-labelledby="dropdown-courses"] .dropdown-item:hover {
+        background: lightgray;
+    }
+}
+
+@media (max-width: 991px) {
+    a.nav-link.dropdown-toggle[aria-expanded="true"] {
+        text-align: center;
+    }
+    .navbar-nav {
+        align-items: center;
+    }
+    .dropdown-item {
+        text-align: center;
+    }
+    .dropdown-menu {
+        background: inherit;
+        border: none;
+    }
+    .dropdown-item:hover {
+        background: lightgrey;
+    }
+}
