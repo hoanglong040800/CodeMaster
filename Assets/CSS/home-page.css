@@ -13,6 +13,14 @@
     justify-content: center;
 }
 
+.img--banner {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .carousel-indicators li {
     width: 10px;
     height: 10px;
@@ -70,14 +78,33 @@
 }
 
 /* Carousel Review */
+
 .img--review {
     background-size: cover;
     background-position: center top;
 }
 
-.card-text--review{
+.card-text--review {
     font-style: italic;
     font-size: 1.2rem;
+}
+
+/* Partner */
+
+.partner-section>div {
+    display: flex;
+    align-items: center;
+}
+
+.partner-section img {
+    width: inherit;
+    padding: 20px;
+}
+
+/* Footer */
+
+.page-footer p, .page-footer a {
+    color: #b3b3b3;
 }
 
 /* ---- Media query ---- */
@@ -86,7 +113,7 @@
     .carousel-item>img {
         height: 300px;
     }
-    .img--review{
+    .img--review {
         width: 100%;
         height: 200px;
     }
@@ -96,7 +123,7 @@
     .carousel-item>img {
         height: 400px;
     }
-    .img--review{
+    .img--review {
         width: 500px;
         height: 200px;
     }
