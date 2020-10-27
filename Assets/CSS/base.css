@@ -9,17 +9,17 @@ body {
     font-size: 1.1rem;
 }
 
-.btn-primary{
+.btn-primary {
     background: var(--primary-color);
     border: 1px solid var(--secondary-color);
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background: var(--secondary-color);
     border: 1px solid var(--third-color);
 }
 
-.btn-secondary{
+.btn-secondary {
     background: transparent;
     color: #333;
 }

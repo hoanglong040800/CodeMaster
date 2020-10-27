@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Online -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Local -->
+    <link rel="stylesheet" href="./Assets/CSS/base.css">
+    <link rel="stylesheet" href="./Assets/CSS/auth-form.css">
+
+    <title> Code Master</title>
+</head>
+
+<body>
+
+    <div class="bg-cover full-screen">
+        <div class="container h-100">
+
+            <div class="row align-items-center h-100">
+                <div class="col-xl-3 col-md-2 col-1"></div>
+
+                <div class="col-xl-6 col-md-8 col-10 auth-container">
+                    <div class="py-5 d-flex flex-column align-items-center" data-aos="fade-down">
+                        <h1> Đăng Nhập CodeMaster</h1>
+
+                        <h4><small> và khám phá ngay những khoá học hot nhất!</small></h4>
+                    </div>
+
+                    <form action="./sign-up.html" class="needs-validation" novalidate>
+
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="800">
+                            <label for="uname"> Tên đăng nhập:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Nhập tên đăng nhập"
+                                name="uname" required>
+                            <div class="valid-feedback"> Chuẩn rồi nha</div>
+                            <div class="invalid-feedback"> Ô này không được trống!</div>
+                        </div>
+
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="1000">
+                            <label for="pwd"> Mật khẩu:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pswd"
+                                required>
+                            <div class="valid-feedback"> Chuẩn rồi nha</div>
+                            <div class="invalid-feedback"> Ô này không được trống!</div>
+                        </div>
+
+                        <div class="form-group d-flex justify-content-end" data-aos="fade-up" data-aos-delay="1400">
+                            <a href=""> Quên mật khẩu?</a>
+                        </div>
+
+                        <div class="d-flex justify-content-center my-4" data-aos="fade-up" data-aos-delay="1600">
+                            <button type="submit" class="btn btn-primary">
+                                Đăng Nhập
+                            </button>
+                        </div>
+
+                        <div class="form-group d-flex justify-content-center my-3" data-aos="fade-up" data-aos-delay="1800">
+                            <p> Chưa có tài khoản? <a href="./sign-up.html"> Đăng ký ngay!</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-xl-3 col-md-2 col-1"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Validation Script -->
+    <script>
+
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+
+    <!-- Bootstrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1000,
+        });
+    </script>
+
+</body>
