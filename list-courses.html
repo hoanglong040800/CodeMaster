@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Online -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/9377e6dfb1.js"></script>
+
+    <!-- Local -->
+    <link rel="stylesheet" href="./Assets/CSS/base.css">
+    <link rel="stylesheet" href="./Assets/CSS/header.css">
+    <link rel="stylesheet" href="./Assets/CSS/animation.css">
+    <link rel="stylesheet" href="./Assets/CSS/home-page.css">
+    <link rel="stylesheet" href="./Assets/CSS/list-courses.css">
+
+    <title>Code Master</title>
+</head>
+<body>
+    <div class="bg-cover">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+
+                <a class="navbar-branch" href="./home-page.html">
+                    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/cm-1-logo.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-target="#navbarFullContent" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- navbar Full content -->
+                <div class="collapse navbar-collapse scale-in-ver-top-sm" id="navbarFullContent">
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Dropdown Cac khoa hoc -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Các khoá học
+                            </a>
+
+                            <div class="dropdown-menu scale-in-ver-top" aria-labelledby="dropdown-courses">
+                                <a class="dropdown-item" href=""> Front-end Development</a>
+                                <a class="dropdown-item" href=""> Back-end Development</a>
+                                <a class="dropdown-item" href=""> Mobile Development</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> Về chúng tôi</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> Liên hệ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./log-in.html">
+                                <button class="btn btn-secondary btn--navbar"> Đăng nhập</button>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sign-up.html">
+                                <button class="btn btn-primary btn--navbar"> Đăng ký</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- container -->
+        </nav> <!-- navbar-expand-lg -->
+
+        <div class="heading">
+            <div class="container">
+                <div class="container-layout">
+                    <div class="heading_child">
+                        <div class="heading-nav">
+                            <div class="heading-nav-item"><a href="#">Trang chủ</a></div>
+                            <i class="fas fa-angle-right heading-nav-icon"></i>
+                            <div class="heading-nav-item" aria-current="page">Danh sách khóa học</div>
+                        </div>
+                    </div>
+                    <div class="heading_child">
+                        <h5 class="heading-title">Khóa học online</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search_tool">
+            <div class="container">
+                <div class="search_bar">
+                    <div class="search-filter">
+                        <select id="type_coures">
+                            <option value="All">All</option>
+                            <option value="front-end">Front-end</option>
+                            <option value="back-end">Back-end</option>
+                            <option value="mobile">Mobile</option>
+                        </select>
+                    </div>
+                    <div class="search-input">
+                        <div class="search-icon">
+                            <i class="fas fa-search icon"></i>
+                        </div>
+                        <div class="input-box">
+                            <input id="input" type="text" placeholder="Tìm kiếm khóa học">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-courses">
+            <div class="container">
+                <div class="grid_courses">
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top" src="./Assets/Images/back-end.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top" src="./Assets/Images/back-end.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top" src="./Assets/Images/back-end.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top" src="./Assets/Images/back-end.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top" src="./Assets/Images/back-end.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top" src="./Assets/Images/back-end.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top" src="./Assets/Images/back-end.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top" src="./Assets/Images/back-end.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top" src="./Assets/Images/back-end.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer bg-dark text-white">
+
+            <!-- Main Footer -->
+            <div class="container text-center text-md-left" data-aos="fade-in" data-aos-delay="800">
+                <div class="row py-5">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <!-- Content -->
+                        <h4 class="text-uppercase font-weight-bold"> Code Master</h4>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p> Trung tâm hướng nghiệp và dạy lập trình uy tín hàng đầu Việt Nam. Code Master là nơi phù hợp
+                            cho mọi người muốn học những kiến thức thiết thực và được đi thực tập ngay sau khi hoàn
+                            thành.</p>
+
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold"> Khoá học</h6>
+
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                        <p><a href=""> Front-end Developer</a></p>
+
+                        <p><a href=""> Back-end Developer</a></p>
+
+                        <p><a href=""> Mobile Developer</a></p>
+
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold"> Code Master</h6>
+
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                        <p><a href=""> Blog</a></p>
+
+                        <p><a href=""> Về chúng tôi</a></p>
+
+                        <p><a href=""> Tuyển dụng</a></p>
+
+                        <p><a href=""> Chính sách & Điều khoản</a></p>
+
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold"> Liên hệ</h6>
+
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                        <p><i class="fas fa-home mr-3"></i> Khu phố 6, Q.Linh Trung, Q.Thủ Đức, TP Hồ Chí Minh</p>
+
+                        <p><i class="fas fa-envelope mr-3"></i> info@codemaster.com</p>
+
+                        <p><i class="fas fa-phone mr-3"></i> (028) 372 52002</p>
+
+                        <p><i class="fas fa-print mr-3"></i> (028) 372 52148</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sub Footer -->
+            <div style="background-color: var(--third-color);">
+                <div class="container">
+                    <div class="row py-3 d-flex align-items-center">
+
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h6> &copy; Code Master 2020 đã đăng ký bản quyền.</h6>
+                        </div>
+
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                            <!-- Facebook -->
+                            <a href=""><i class="fab fa-facebook-f text-white px-3"></i></a>
+
+                            <!-- Youtube -->
+                            <a href=""><i class="fab fa-youtube text-white px-3"></i></a>
+
+                            <!-- Linkedin -->
+                            <a href=""><i class="fab fa-linkedin-in text-white px-3"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- Footer -->
+
+    </div>  <!--end- bg-cover -->
+
+        <!-- Bootstrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <script>
+            AOS.init({
+                offset: 100,
+                duration: 1000,
+            });
+        </script>
+        
+</body>
+</html>
