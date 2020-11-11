@@ -18,6 +18,10 @@
     align-items: center;
 }
 
+#navbarFullContent .btn{
+    width: 6.8rem;
+}
+
 .dropdown-menu[aria-labelledby="dropdown-courses"] .dropdown-item {
     font-size: 1.2rem;
     color: var(--secondary);

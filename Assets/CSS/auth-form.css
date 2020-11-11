@@ -1,13 +1,3 @@
-.full-screen {
-    width: 100vw;
-    height: 100vh;
-}
-
-.full-screen-form {
-    width: 100%;
-    height: 100%;
-}
-
 .bg-cover {
     background: #fdfdfd;
     background-image: url(../Images/bg_fluid.svg);
@@ -27,7 +17,6 @@
 }
 
 .auth-container .btn-primary{
-    font-size: large;
     width: 100px;
 }
 
