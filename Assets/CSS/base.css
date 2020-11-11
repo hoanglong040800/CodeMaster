@@ -11,19 +11,26 @@ body {
 }
 
 .btn-primary {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1rem;
     background: var(--primary-color);
     border: 1px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-primary:hover {
-
     background: var(--secondary-color);
     border: 1px solid var(--third-color);
 }
 
 .btn-secondary {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1rem;
     background: transparent;
     color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

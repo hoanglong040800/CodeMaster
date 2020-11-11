@@ -59,15 +59,15 @@
 }
 
 .btn--two-columns-section {
-    width: 130px;
     height: 40px;
     margin: 20px 0;
-    padding: 8px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .btn--two-columns-section:hover {
-    transform: scale(1.2, 1.2),
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
 }
 
 /* Statitics */
