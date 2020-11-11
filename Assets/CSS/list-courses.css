@@ -59,6 +59,7 @@
 
 .search_tool {
     height: 70px;
+    padding: 20px;
     position: relative;
     margin-top: -35px;
     z-index: 1;
@@ -94,7 +95,7 @@
 .search-icon {
     flex: 1;
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
 }
 
 .icon {
@@ -125,7 +126,7 @@
 .grid_courses {
     max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 230px);
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 2rem;
 }
 
@@ -153,12 +154,16 @@
 }
 
 .grid_courses .card-img-top {
-    height: 150px;
+    height: 180px;
     object-fit: cover;
 }
 
+.grid_courses .card-body{
+    padding-bottom: 0;
+}
+
 .grid_courses .card-text {
-    height: 7rem;
+    height: 4rem;
     overflow: hidden;
 }
 
