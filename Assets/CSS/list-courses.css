@@ -2,7 +2,7 @@
     background: #fdfdfd;
     background-image: url(../Images/bg_fluid.svg);
     background-repeat: repeat-y;
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
 }
 
@@ -46,7 +46,7 @@
     font-size: 1rem;
 }
 
-.heading-nav-item a{
+.heading-nav-item a {
     text-decoration: none;
     color: var(--white-text-color);
 }
@@ -125,22 +125,49 @@
 .grid_courses {
     max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2vw
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 2rem;
+}
+
+.grid_courses .card .card-text {
+    font-size: 0.9rem;
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.06);
 }
 
-.card  > a{
+.card>a {
     text-decoration: none;
     color: var(--main-text-color);
 }
 
-/* Footer */
+.card-footer {
+    border: none;
+    background: transparent;
+}
 
-.page-footer p, .page-footer a {
-    color: #b3b3b3;
+.grid_courses .card-title {
+    height: 3rem;
+}
+
+.grid_courses .card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+
+.grid_courses .card-text {
+    height: 7rem;
+    overflow: hidden;
+}
+
+.grid_courses .fa-arrow-right {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.grid_courses .fa-arrow-right:hover {
+    color: var(--secondary-color);
+    transform: scale(1.2, 1.2);
 }

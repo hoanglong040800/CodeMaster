@@ -115,12 +115,6 @@
     padding: 20px;
 }
 
-/* Footer */
-
-.page-footer p, .page-footer a {
-    color: #b3b3b3;
-}
-
 /* ---- Media query ---- */
 
 @media (max-width: 575.99px) {
