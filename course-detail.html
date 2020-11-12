@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Online -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/9377e6dfb1.js"></script>
+
+    <!-- Local -->
+    <link rel="stylesheet" href="./Assets/CSS/base.css">
+    <link rel="stylesheet" href="./Assets/CSS/header.css">
+    <link rel="stylesheet" href="./Assets/CSS/footer.css">
+    <link rel="stylesheet" href="./Assets/CSS/animation.css">
+    <link rel="stylesheet" href="./Assets/CSS/home-page.css">
+    <link rel="stylesheet" href="./Assets/CSS/course-detail.css">
+
+    <title> Code Master</title>
+</head>
+<body>
+    <div class="bg-cover">
+        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+
+                <a class="navbar-branch" href="./home-page.html">
+                    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/cm-1-logo.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-target="#navbarFullContent" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- navbar Full content -->
+                <div class="collapse navbar-collapse scale-in-ver-top-sm" id="navbarFullContent">
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Dropdown Cac khoa hoc -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Các khoá học
+                            </a>
+
+                            <div class="dropdown-menu scale-in-ver-top" aria-labelledby="dropdown-courses">
+                                <a class="dropdown-item" href="./list-courses.html"> Front-end Development</a>
+                                <a class="dropdown-item" href="./list-courses.html"> Back-end Development</a>
+                                <a class="dropdown-item" href="./list-courses.html"> Mobile Development</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> Về chúng tôi</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> Liên hệ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./log-in.html">
+                                <button class="btn btn-secondary btn--navbar"> Đăng nhập</button>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sign-up.html">
+                                <button class="btn btn-primary btn--navbar"> Đăng ký</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div> <!-- container -->
+        </nav> <!-- navbar-expand-lg -->
+
+        <section class="heading">
+            <div class="container">
+                <div class="container-layout">
+                    <div class="heading_child">
+                        <div class="heading-nav">
+                            <div class="heading-item"><a href="./home-page.html">Trang chủ</a></div>
+                            <i class="fas fa-angle-right heading-icon"></i>
+                            <div class="heading-item" aria-current="page">Danh sách khóa học</div>
+                            <i class="fas fa-angle-right heading-icon"></i>
+                            <div class="heading-item" aria-current="page">Các khoá học Front-end Development</div>
+                        </div>
+                        <h5 class="heading-title">Khóa học ReactJS nâng cao</h5>
+                    </div>
+                    <div class="heading_child">
+                        <div class="start-date">
+                            <i class="far fa-calendar heading-icon heading-item"></i>
+                            <div class="child-item">
+                                <div class="date-text heading-item">Ngày bắt đầu: 12 tháng 11 năm 2020</div>
+                            </div>
+
+                        </div>
+                        <div class="schedule">
+                            <i class="far fa-clock heading-icon"></i>
+                            <div class="child-item heading-item">
+                                <div class="sched-item">Thứ 5: 19:00 - 21:30</div>
+                                <div class="sched-item">Thứ 7: 19:00 - 21:30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course__detail">
+            <article class="course__detail-main">
+                <nav class="course__detail__nav">
+                    <div class="courese__detail__nav-item">Tổng quan</div>
+                    <div class="courese__detail__nav-item">Chương trình học</div>
+                    <div class="courese__detail__nav-item">Giảng viên</div>
+                    <div class="courese__detail__nav-item">Đánh giá</div>
+                    <div class="courese__detail__nav-item">Hỏi đáp</div>
+                </nav>
+                <div class="course__detail__content">
+                    <div class="content-reason">
+                        <h2 class="content-reason-header">Tại sao học ReactJS</h2>
+                        <div class="content-reason-item">
+                            <h3 class="content-title">Ứng dụng đa ngành</h3>
+                            <p class="item-text">
+                                ReactJS được ứng dụng lập trình rộng rãi với hàng ngàn websites thuộc các lĩnh vực khác nhau, bao gồm Lazada, Shopee, Sendo, Bamboo Airways, Instagram and Airbnb.
+                            </p>
+                        </div>
+
+                        <div class="content-reason-item">
+                            <h3 class="content-title">Nhu cầu thị trường cao</h3>
+                            <p class="item-text">
+                                ReactJS là một trong những thư viện có nhu cầu ứng dụng nhiều nhất hiện nay. Tuy nhiên, số lượng các lập trình viên sử dụng thành thạo công cụ này vẫn chưa đáp ứng được nhu cầu thị trường.
+                            </p>
+                        </div>
+
+                        <div class="content-reason-item">
+                            <h3 class="content-title">Hỗ trợ chuyên sâu</h3>
+                            <p class="item-text">
+                                Khóa học ReactJS được xây dựng dựa theo phương pháp problem-based learning, hướng dẫn ReactJS chi tiết đi kèm với dự án thiết kế cuối khóa, như xây dựng ứng dụng giỏ hàng thương mại điện tử.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="content-pros">
+
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="courses__detail-sidebar">
+                <h2 class="course__detail-header">
+                    
+                </h2>
+            </article>
+        </section>
+
+
+    </div>
+</body>
+</html>
