@@ -132,7 +132,11 @@
 
 .card-text--review {
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
+#carouselReview .carousel-indicators{
+    margin-left: 50%;
 }
 
 /* Partner */
