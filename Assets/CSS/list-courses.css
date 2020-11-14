@@ -10,7 +10,7 @@
 
 .heading {
     height: 250px;
-    background-image: url('https://nordiccoder.com/app/uploads/2020/05/hinnh1.jpg');
+    background-image: url('https://nordiccoder.com/app/uploads/2019/02/Code.png');
     background-size: cover;
     margin-top: 65px;
 }
@@ -23,30 +23,36 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     color: var(--white-text-color);
 }
 
 .heading_child {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .heading-nav {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
-.heading-nav-item {
-    margin-left: 5px;
+.heading-item {
+    margin-left: 2px;
     margin-right: 5px;
 }
 
-.heading-nav-icon {
+.heading-icon {
+    margin-top: 3px;
     font-size: 1rem;
+    margin-right: 5px;
 }
 
-.heading-nav-item a {
+.heading-item a {
     text-decoration: none;
     color: var(--white-text-color);
 }
@@ -116,11 +122,6 @@
 }
 
 /* list-courses */
-
-.list-courses {
-    margin-top: 40px;
-    margin-bottom: 100px;
-}
 
 .grid_courses {
     max-width: 1200px;
