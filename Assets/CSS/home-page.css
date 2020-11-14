@@ -54,8 +54,39 @@
 
 /* ---- Two Column Section ---- */
 
+/* Two columns section */
+
 .heading--two-columns-section {
-    padding: 20px 0;
+    position: relative;
+    padding: 10px 0 10px 40px;
+    margin: 20px 0;
+    color: var(--primary-color);
+}
+
+.heading--two-columns-section::before {
+    content: '';
+    background-color: var(--primary-color);
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.list--two-columns-section {
+    list-style: none;
+}
+
+.list--two-columns-section li {
+    margin-left: 2em;
+    text-indent: -2em;
+}
+
+.list--two-columns-section li::before {
+    content: "■";
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    color: var(--primary-color);
 }
 
 .btn--two-columns-section {
@@ -101,7 +132,11 @@
 
 .card-text--review {
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
+#carouselReview .carousel-indicators{
+    margin-left: 50%;
 }
 
 /* Partner */

@@ -136,6 +136,8 @@
 
 .card:hover {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card>a {
