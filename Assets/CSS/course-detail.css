@@ -9,10 +9,12 @@
 /* heading */
 
 .heading {
+    position: relative;
     height: 250px;
-    background-image: url('https://nordiccoder.com/app/uploads/2019/02/Code.png');
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100%), url('https://beagledigital.com.au/wp-content/uploads/2019/12/react-JS-image.jpg');
     background-size: cover;
-    margin-top: 65px;
+    background-position: center;
+    margin-top: 60px;
 }
 
 .container {
@@ -47,9 +49,8 @@
 }
 
 .heading-icon {
-    margin-top: 3px;
-    font-size: 1rem;
-    margin-right: 5px;
+    margin: 0 8px;
+    font-size: 1.3rem;
 }
 
 .heading-item a {
@@ -61,24 +62,18 @@
     font-weight: bold;
 }
 
-.start-date, .schedule {
-    display: flex;
-}
-
 /* course-detail */
 
 .course-detail__main {
-    width: 62.5%;
     color: var(--main-text-color);
 }
-
 
 /* tab__nav */
 
 .tabs__nav {
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 30px auto;
     font-weight: bold;
 }
@@ -104,7 +99,6 @@
     background-color: var(--primary-color);
 }
 
-
 /* tab-content */
 
 .content-header {
@@ -112,17 +106,16 @@
     margin: 20px auto;
 }
 
-.content-item-img {
-    height: 42px;
-    width: 45px;
-}
 
 .content-item {
     display: flex;
-    justify-content: space-between;
     margin: 20px auto;
 }
 
+.content-item-img {
+    font-size: 25px;
+    color: var(--main-text-color);
+}
 .content-title {
     font-weight: bold;
 }
@@ -146,11 +139,13 @@
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active_acco, .accordion:hover {
     background-color: #ccc;
 }
 
 /* Style the accordion panel. Note: hidden by default */
+
 .panel {
     padding: 0 18px;
     background-color: white;
@@ -158,8 +153,10 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+
 .accordion:after {
-    content: '\02795';  /* Unicode character for "plus" sign (+) */
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
     float: right;
@@ -167,27 +164,36 @@
 }
 
 .active_acco:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
 }
 
 .lesson {
     margin-bottom: 10px;
 }
 
+/* ---- Lich hoc/ Giang vien ---- */
+
+#comment .img-teacher{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
 /* courses-detail__sidebar  */
 
 .courses-detail__sidebar {
-    width: 33.33%;
     color: var(--main-text-color);
     border: 1px solid #ccc;
-    float: right;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
 }
 
-/*courses-recommend*/
+/* ---- Courses-Recommendation ---- */
+
 .course-recommend {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .grid_courses {

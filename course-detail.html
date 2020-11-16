@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,21 +15,21 @@
     <link rel="stylesheet" href="./Assets/CSS/base.css">
     <link rel="stylesheet" href="./Assets/CSS/header.css">
     <link rel="stylesheet" href="./Assets/CSS/footer.css">
-    <link rel="stylesheet" href="./Assets/CSS/animation.css">
-    <link rel="stylesheet" href="./Assets/CSS/home-page.css">
     <link rel="stylesheet" href="./Assets/CSS/course-detail.css">
 
     <title> Code Master</title>
 </head>
+
 <body>
+
     <div class="bg-cover">
-        
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
 
                 <a class="navbar-branch" href="./home-page.html">
-                    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/cm-1-logo.png" alt="">
+                    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/cm-1-logo.png">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-target="#navbarFullContent" data-toggle="collapse">
@@ -52,13 +53,14 @@
                                 <a class="dropdown-item" href="./list-courses.html"> Mobile Development</a>
                             </div>
                         </li>
+                        <!-- dropdown -->
 
                         <li class="nav-item">
                             <a class="nav-link" href=""> Blog</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href=""> Về chúng tôi</a>
+                            <a class="nav-link" href="./about-us.html"> Về chúng tôi</a>
                         </li>
 
                         <li class="nav-item">
@@ -93,323 +95,342 @@
                             <i class="fas fa-angle-right heading-icon"></i>
                             <div class="heading-item" aria-current="page">Các khoá học Front-end Development</div>
                         </div>
-                        <h5 class="heading-title">Khóa học ReactJS nâng cao</h5>
+                        <h5 class="heading-title">Khóa học Xây dựng website từ A-Z với ReactJS</h5>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="course-detail">
+        <section class="course-detail my-5">
             <div class="container">
+                <div class="row">
 
-                <article class="courses-detail__sidebar">
-                    <div class="container">
-                        <div class="content">
-                            <h5 class="content-title">Đăng ký thông tin để nhận tư vấn miễn phí</h5>
-                        </div>
+                    <main class="course-detail__main col-12 col-md-8">
+                        <nav class="tabs__nav">
+                            <div class="tabs__nav-item">
+                                <a href="#overview" class="tab__links" onclick="openTab(event, 'overview')">Tổng
+                                    quan</a>
+                            </div>
+                            <div class="tabs__nav-item">
+                                <a href="#curriculum" class="tab__links active"
+                                    onclick="openTab(event, 'curriculum')">Chương trình học</a>
+                            </div>
+                            <div class="tabs__nav-item">
+                                <a href="#comment" class="tab__links" onclick="openTab(event, 'comment')"> Lịch học/
+                                    Giảng viên</a>
+                            </div>
+                        </nav>
 
-                        <div class="content">
+                        <div class="tabs__content">
 
-                        </div>
+                            <div id="overview" class="tabs__content-item" style="display: none;">
+                                <div class="content">
+                                    <h3 class="content-header"> Giới thiệu khoá học</h3>
+                                    <div class="content-item">
 
-                        <div class="content">
+                                        <i class="far fa-file-alt content-item-img"></i>
+                                        <div class="item-text">
+                                            <h5 class="content-title"> Tổng quan về ReactJS</h5>
+                                            <p class="item__p">
+                                                ReactJS là một thư viện của ngôn ngữ Javascript được ứng dụng lập trình
+                                                rộng rãi với hàng ngàn websites thuộc
+                                                các lĩnh vực khác nhau, bao gồm Lazada, Shopee, Sendo, Bamboo Airways,
+                                                Instagram và Airbnb.
+                                            </p>
+                                        </div>
 
-                        </div>
-                    </div>
-                </article>
+                                    </div>
 
-                <article class="course-detail__main">
-                    <nav class="tabs__nav">
-                        <div class="tabs__nav-item">
-                            <a href="#overview" class="tab__links" onclick="openTab(event, 'overview')">Tổng quan</a>
-                        </div>
-                        <div class="tabs__nav-item">
-                            <a href="#curriculum" class="tab__links active" onclick="openTab(event, 'curriculum')">Chương trình học</a>
-                        </div>
-                        <div class="tabs__nav-item">
-                            <a href="#comment" class="tab__links" onclick="openTab(event, 'comment')">Đánh giá</a>
-                        </div>
-                    </nav>
-                    <div class="tabs__content">
-                        <div id="overview" class="tabs__content-item" style="display: none;">
+                                    <div class="content-item">
+                                        <i class="fas fa-bullseye content-item-img"></i>
+                                        <div class="item-text">
+                                            <h5 class="content-title"> Kết quả mong đợi</h5>
+                                            <p class="item__p">
+                                                Có khả năng phân tích và xây dựng lại một trang web bằng HTML, CSS, và
+                                                thư viện ReactJS. Nắm rõ được cách ứng dụng ReactJS vào trang web cũng
+                                                như mindset để tạo một trang web từ đầu tới cuối
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="content">
+                                    <h2 class="content-header"> Những lợi ích dành cho học viên</h2>
+
+                                    <div class="content-item">
+                                        <i class="fas fa-chalkboard-teacher content-item-img"></i>
+                                        <div class="item-text">
+                                            <h5 class="content-title"> 5+ các khoá học online miễn phí</h5>
+                                            <p class="item__p">
+                                                Thực hành xây dựng các ứng dụng bắt kịp xu thế công nghệ & sử dụng những
+                                                công cụ được dùng trong dự án thực tế như Confluence, Jira, Slack.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-item">
+                                        <i class="fas fa-user-tie content-item-img"></i>
+                                        <div class="item-text">
+                                            <h5 class="content-title"> Đội ngũ giảng viên hàng đầu</h5>
+                                            <p class="item__p">
+                                                Giảng viên là các chuyên gia nhiều kinh nghiệm, giúp bạn phát triển kỹ
+                                                năng
+                                                lập trình và chia sẻ thực tế về nghề.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-item">
+                                        <i class="fas fa-briefcase content-item-img"></i>
+                                        <div class="item-text">
+                                            <h5 class="content-title">Cơ hội việc làm & mức lương hấp dẫn</h5>
+                                            <p class="item__p">
+                                                Cam kết hỗ trợ tìm việc trong 6 tháng sau tốt nghiệp thông qua các buổi
+                                                tư
+                                                vấn nghề nghiệp, hoàn chỉnh CV và phỏng vấn thử.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> <!-- overview -->
+
+                            <div id="curriculum" class="tabs__content-item">
+                                <div class="item-text" style="padding: 0">
+                                    <h5 class="content-title">Hình thức học</h5>
+                                    <p class="item__p">
+                                        Live Tutoring, Offline
+                                    </p>
+                                </div>
+                                <div class="content">
+                                    <h3 class="content-header">Xây dựng website từ A-Z với ReactJS</h3>
+
+                                    <div class="lesson">
+                                        <button class="accordion">Lesson 1 - TypeScript </button>
+                                        <div class="panel">
+                                            <ul class="lesson-list">
+                                                <li class="lesson-list-item">An Intro to Typescript</li>
+                                                <li class="lesson-list-item">Type annotations</li>
+                                                <li class="lesson-list-item">Interfaces</li>
+                                                <li class="lesson-list-item">Classes</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="lesson">
+                                        <button class="accordion">Lesson 2 - Nextjs</button>
+                                        <div class="panel">
+                                            <ul class="lesson-list">
+                                                <li class="lesson-list-item">An Intro to Typescript</li>
+                                                <li class="lesson-list-item">Type annotations</li>
+                                                <li class="lesson-list-item">Interfaces</li>
+                                                <li class="lesson-list-item">Classes</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="lesson">
+                                        <button class="accordion">Lesson 3 - Advanced CSS and Styled Component</button>
+                                        <div class="panel">
+                                            <ul class="lesson-list">
+                                                <li class="lesson-list-item">An Intro to Typescript</li>
+                                                <li class="lesson-list-item">Type annotations</li>
+                                                <li class="lesson-list-item">Interfaces</li>
+                                                <li class="lesson-list-item">Classes</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="lesson">
+                                        <button class="accordion">Lesson 4 - Storybook</button>
+                                        <div class="panel">
+                                            <ul class="lesson-list">
+                                                <li class="lesson-list-item">An Intro to Typescript</li>
+                                                <li class="lesson-list-item">Type annotations</li>
+                                                <li class="lesson-list-item">Interfaces</li>
+                                                <li class="lesson-list-item">Classes</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="lesson">
+                                        <button class="accordion">Lesson 5 - GraphQL</button>
+                                        <div class="panel">
+                                            <ul class="lesson-list">
+                                                <li class="lesson-list-item">An Intro to Typescript</li>
+                                                <li class="lesson-list-item">Type annotations</li>
+                                                <li class="lesson-list-item">Interfaces</li>
+                                                <li class="lesson-list-item">Classes</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="lesson">
+                                        <button class="accordion">Lesson 6 - Testing</button>
+                                        <div class="panel">
+                                            <ul class="lesson-list">
+                                                <li class="lesson-list-item">An Intro to Typescript</li>
+                                                <li class="lesson-list-item">Type annotations</li>
+                                                <li class="lesson-list-item">Interfaces</li>
+                                                <li class="lesson-list-item">Classes</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="lesson">
+                                        <button class="accordion">Lesson 7 - Presentation and Mock interview</button>
+                                        <div class="panel">
+                                            <ul class="lesson-list">
+                                                <li class="lesson-list-item">An Intro to Typescript</li>
+                                                <li class="lesson-list-item">Type annotations</li>
+                                                <li class="lesson-list-item">Interfaces</li>
+                                                <li class="lesson-list-item">Classes</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div id="comment" class="tabs__content-item" style="display: none;">
+                                <div class="heading_child">
+
+                                    <div class="d-flex">
+                                        <i class="far fa-calendar heading-icon"></i>
+                                        <div class="ml-1">
+                                            <h5> Ngày bắt đầu: </h5>
+                                            <p> 12 tháng 11 năm 2020</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <i class="far fa-clock heading-icon"></i>
+                                        <div class="ml-1">
+                                            <h5> Thời gian: </h5>
+                                            <p> Thứ 5: 19:00 - 21:30</p>
+                                            <p> Thứ 7: 19:00 - 21:30</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <i class="fas fa-user-tie heading-icon"></i>
+                                        <div class="ml-1">
+                                            <h5> Giảng viên/ Trợ giảng: </h5>
+
+                                            <div class="row">
+                                                <section class="d-flex my-3 col-12 col-sm-6">
+                                                    <div>
+                                                        <img class="img-teacher"
+                                                            src="https://image.freepik.com/free-photo/blond-man-happy-expression_1194-2873.jpg">
+                                                    </div>
+
+                                                    <div class="d-flex flex-column justify-content-center ml-3">
+                                                        <p class="font-weight-bold"> Sơn Trần</p>
+                                                        <p> Full-stack developer tại Shopee</p>
+                                                    </div>
+                                                </section>
+
+                                                <section class="d-flex my-3 col-12 col-sm-6">
+                                                    <div>
+                                                        <img class="img-teacher"
+                                                            src="https://image.freepik.com/free-photo/portrait-smiling-young-dark-skinned-curly-woman-siting-cafe-terrace-works-laptop-drinking-coffee-laughing-talking-phone-with-friend-wearing-yellow-coat_295783-2603.jpg">
+                                                    </div>
+
+                                                    <div class="d-flex flex-column justify-content-center ml-3">
+                                                        <p class="font-weight-bold"> Elizabeth</p>
+                                                        <p> Back-end developer tại UIT</p>
+                                                    </div>
+                                                </section>
+                                            </div> <!-- row -->
+                                        </div> <!-- text -->
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div><!-- tab content -->
+                    </main>
+
+                    <aside class="courses-detail__sidebar col-12 col-md-4 my-5">
+                        <div class="container">
                             <div class="content">
-                                <h3 class="content-header">Tại sao học ReactJS</h3>
-                                <div class="content-item">
-                                    <img src="https://nordiccoder.com/app/uploads/2018/08/Benefit_1.png" alt="" class="content-item-img">
-                                    <div class="item-text">
-                                        <h5 class="content-title">Ứng dụng đa ngành</h5>
-                                        <p class="item__p">
-                                            ReactJS được ứng dụng lập trình rộng rãi với hàng ngàn websites thuộc các lĩnh vực khác nhau, bao gồm Lazada, Shopee, Sendo, Bamboo Airways, Instagram and Airbnb.
-                                        </p>
-                                    </div>
-        
-                                </div>
-        
-                                <div class="content-item">
-                                    <img src="https://nordiccoder.com/app/uploads/2018/08/Benefit_1.png" alt="" class="content-item-img">
-                                    <div class="item-text">
-                                        <h5 class="content-title">Nhu cầu thị trường cao</h5>
-                                        <p class="item__p">
-                                            ReactJS là một trong những thư viện có nhu cầu ứng dụng nhiều nhất hiện nay. Tuy nhiên, số lượng các lập trình viên sử dụng thành thạo công cụ này vẫn chưa đáp ứng được nhu cầu thị trường.
-                                        </p>
-                                    </div>
-                                </div>
-        
-                                <div class="content-item">
-                                    <img src="https://nordiccoder.com/app/uploads/2018/08/Benefit_1.png" alt="" class="content-item-img">
-                                    <div class="item-text">
-                                        <h5 class="content-title">Hỗ trợ chuyên sâu</h5>
-                                        <p class="item__p">
-                                            Khóa học ReactJS được xây dựng dựa theo phương pháp problem-based learning, hướng dẫn ReactJS chi tiết đi kèm với dự án thiết kế cuối khóa, như xây dựng ứng dụng giỏ hàng thương mại điện tử.
-                                        </p>
-                                    </div>
-                                </div>
-        
-                            </div>
-        
-                            <div class="content">
-                                <h2 class="content-header">Những lợi ích dành cho học viên</h2>
-        
-                                <div class="content-item">
-                                    <img src="https://nordiccoder.com/app/uploads/2018/08/Benefit_1.png" alt="" class="content-item-img">
-                                    <div class="item-text">
-                                        <h5 class="content-title">40 giờ học live via Zoom + support online</h5>
-                                        <p class="item__p">
-                                            Thực hành xây dựng các ứng dụng bắt kịp xu thế công nghệ & sử dụng những công cụ được dùng trong dự án thực tế như Confluence, Jira, Slack.
-                                        </p>
-                                    </div>
-                                </div>
-        
-                                <div class="content-item">
-                                    <img src="https://nordiccoder.com/app/uploads/2018/08/Benefit_1.png" alt="" class="content-item-img">
-                                    <div class="item-text">
-                                        <h5 class="content-title">Đội ngũ giảng viên hàng đầu</h5>
-                                        <p class="item__p">
-                                            Giảng viên là các chuyên gia nhiều kinh nghiệm, giúp bạn phát triển kỹ năng lập trình và chia sẻ thực tế về nghề.
-                                        </p>
-                                    </div>
-                                </div>
-        
-                                <div class="content-item">
-                                    <img src="https://nordiccoder.com/app/uploads/2018/08/Benefit_1.png" alt="" class="content-item-img">
-                                    <div class="item-text">
-                                        <h5 class="content-title">Cơ hội việc làm & mức lương hấp dẫn</h5>
-                                        <p class="item__p">
-                                            Cam kết hỗ trợ tìm việc trong 6 tháng sau tốt nghiệp thông qua các buổi tư vấn nghề nghiệp, hoàn chỉnh CV và phỏng vấn thử.
-                                        </p>
-                                    </div>
-                                </div>
-        
-                                <div class="content-item">
-                                    <img src="https://nordiccoder.com/app/uploads/2018/08/Benefit_1.png" alt="" class="content-item-img">
-                                    <div class="item-text">
-                                        <h5 class="content-title">Mở rộng networking và các lợi ích khác</h5>
-                                        <p class="item__p">
-                                            Tham gia các sự kiện networking, workshop dành riêng cho cựu học viên và nhận học bổng cho các khóa học lập trình tiếp theo.
-                                        </p>
-                                    </div>
-                                </div>
-        
-                                <div class="content-item">
-                                    <img src="https://nordiccoder.com/app/uploads/2018/08/Benefit_1.png" alt="" class="content-item-img">
-                                    <div class="item-text">
-                                        <h5 class="content-title">Hỗ trợ học phí</h5>
-                                        <p class="item__p">
-                                            Học viên được hỗ trợ chia nhỏ học phí và đóng theo từng đợt áp dụng cho mọi hình thức thanh toán.
-                                        </p>
-                                    </div>                            
-                                </div>
-                            </div>
-        
-                        </div>
-                        
-                        <div id="curriculum" class="tabs__content-item">
-                            <div class="item-text" style="padding: 0">
-                                <h5 class="content-title">Hình thức học</h5>
-                                <p class="item__p">
-                                    Live Tutoring, Offline
-                                </p>
-                            </div>
-                            <div class="content">
-                                <h3 class="content-header">ReactJS Nâng cao</h3>
-                                
-                                <div class="lesson">
-                                    <button class="accordion">Lesson 1 - TypeScript </button>
-                                    <div class="panel">
-                                        <ul class="lesson-list">
-                                            <li class="lesson-list-item">An Intro to Typescript</li>
-                                            <li class="lesson-list-item">Type annotations</li>
-                                            <li class="lesson-list-item">Interfaces</li>
-                                            <li class="lesson-list-item">Classes</li>
-                                        </ul>
-                                        
-                                    </div>
-                                </div>
-
-                                <div class="lesson">
-                                    <button class="accordion">Lesson 2 - Nextjs</button>
-                                    <div class="panel">
-                                        <ul class="lesson-list">
-                                            <li class="lesson-list-item">An Intro to Typescript</li>
-                                            <li class="lesson-list-item">Type annotations</li>
-                                            <li class="lesson-list-item">Interfaces</li>
-                                            <li class="lesson-list-item">Classes</li>
-                                        </ul>
-                                     
-                                    </div>
-                                </div>
-
-                                <div class="lesson">
-                                    <button class="accordion">Lesson 3 - Advanced CSS and Styled Component</button>
-                                    <div class="panel">
-                                        <ul class="lesson-list">
-                                            <li class="lesson-list-item">An Intro to Typescript</li>
-                                            <li class="lesson-list-item">Type annotations</li>
-                                            <li class="lesson-list-item">Interfaces</li>
-                                            <li class="lesson-list-item">Classes</li>
-                                        </ul>
-                                     
-                                    </div> 
-                                </div>
-
-                                <div class="lesson">
-                                    <button class="accordion">Lesson 4 - Storybook</button>
-                                    <div class="panel">
-                                        <ul class="lesson-list">
-                                            <li class="lesson-list-item">An Intro to Typescript</li>
-                                            <li class="lesson-list-item">Type annotations</li>
-                                            <li class="lesson-list-item">Interfaces</li>
-                                            <li class="lesson-list-item">Classes</li>
-                                        </ul>
-                                      
-                                    </div>
-                                </div>
-
-                                <div class="lesson">
-                                    <button class="accordion">Lesson 5 - GraphQL</button>
-                                    <div class="panel">
-                                        <ul class="lesson-list">
-                                            <li class="lesson-list-item">An Intro to Typescript</li>
-                                            <li class="lesson-list-item">Type annotations</li>
-                                            <li class="lesson-list-item">Interfaces</li>
-                                            <li class="lesson-list-item">Classes</li>
-                                        </ul>
-                                      
-                                    </div>
-                                </div>
-
-                                <div class="lesson">
-                                    <button class="accordion">Lesson 6 - Testing</button>
-                                    <div class="panel">
-                                        <ul class="lesson-list">
-                                            <li class="lesson-list-item">An Intro to Typescript</li>
-                                            <li class="lesson-list-item">Type annotations</li>
-                                            <li class="lesson-list-item">Interfaces</li>
-                                            <li class="lesson-list-item">Classes</li>
-                                        </ul>
-                                      
-                                    </div>
-                                </div>
-
-                                <div class="lesson">
-                                    <button class="accordion">Lesson 7 - Presentation and Mock interview</button>
-                                    <div class="panel">
-                                        <ul class="lesson-list">
-                                            <li class="lesson-list-item">An Intro to Typescript</li>
-                                            <li class="lesson-list-item">Type annotations</li>
-                                            <li class="lesson-list-item">Interfaces</li>
-                                            <li class="lesson-list-item">Classes</li>
-                                        </ul>
-                                      
-                                    </div>
-                                </div>
-                                
+                                <h5 class="content-title">Đăng ký thông tin để nhận tư vấn miễn phí</h5>
                             </div>
                         </div>
+                    </aside>
 
-                        <div id="comment" class="tabs__content-item" style="display: none;">
-                            <div class="heading_child">
-                                <div class="start-date">
-                                    <i class="far fa-calendar heading-icon heading-item"></i>
-                                    <div class="child-item">
-                                        <div class="date-text heading-item">Ngày bắt đầu: 12 tháng 11 năm 2020</div>
-                                    </div>
-        
-                                </div>
-                                <div class="schedule">
-                                    <i class="far fa-clock heading-icon"></i>
-                                    <div class="child-item heading-item">
-                                        <div class="sched-item">Thứ 5: 19:00 - 21:30</div>
-                                        <div class="sched-item">Thứ 7: 19:00 - 21:30</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-
-                    </div>
-
-                </article>
-    
+                </div>
             </div>
-
         </section>
 
         <section class="course-recommend">
             <div class="container">
+                <div class="py-5" data-aos="fade-up">
+                    <h3> Những khoá học liên quan</h3>
+                </div>
+
                 <div class="grid_courses">
                     <div class="card" data-aos="fade-up" data-aos-delay="500">
                         <a href="">
                             <img class="card-img-top"
                                 src="https://nordiccoder.com/app/uploads/2020/06/Wallpaper-01-365x215-c-default.png"
                                 alt="Card image cap">
-    
+
                             <div class="card-body">
                                 <h5 class="card-title"> Thiết kế giao diện cơ bản</h5>
                                 <p class="card-text">
                                     Khoá học nền tảng cho việc thiết kế nói chung
                                 </p>
                             </div>
-    
+
                             <div class="card-footer d-flex justify-content-between align-items-center">
                                 <small class="text-muted"> 10 tuần, Offline</small>
                                 <i class="fas fa-arrow-right"></i>
                             </div>
                         </a>
                     </div>
-    
+
                     <div class="card" data-aos="fade-up" data-aos-delay="500">
                         <a href="">
                             <img class="card-img-top"
                                 src="https://nordiccoder.com/app/uploads/2019/02/Javascript-365x215-c-default.jpg"
                                 alt="Card image cap">
-    
+
                             <div class="card-body">
                                 <h5 class="card-title"> Học Javascript từ cơ bản đến nâng cao</h5>
                                 <p class="card-text">
                                     Khoá học Javascript đầy đủ từ A-Z và cách áp dụng vào những dự án thực tế
                                 </p>
                             </div>
-    
+
                             <div class="card-footer d-flex justify-content-between align-items-center">
                                 <small class="text-muted"> 200h, Offline</small>
                                 <i class="fas fa-arrow-right"></i>
                             </div>
                         </a>
                     </div>
-    
+
                     <div class="card" data-aos="fade-up" data-aos-delay="500">
                         <a href="">
                             <img class="card-img-top"
                                 src="https://nordiccoder.com/app/uploads/2019/02/HTML-CSS-1-365x215-c-default.jpg"
                                 alt="Card image cap">
-    
+
                             <div class="card-body">
                                 <h5 class="card-title"> Học HTML5 và CSS3 cơ bản</h5>
                                 <p class="card-text">
                                     Khoá học cơ bản về cách làm nên giao diện web cơ bản
                                 </p>
                             </div>
-    
+
                             <div class="card-footer d-flex justify-content-between align-items-center">
                                 <small class="text-muted"> 15h, Online</small>
                                 <i class="fas fa-arrow-right"></i>
@@ -537,7 +558,11 @@
         </footer>
     </div>
 
-        <!-- Bootstrap 4 -->
+
+
+
+
+    <!-- Bootstrap 4 -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -549,8 +574,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    
-        <!-- AOS -->
+
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
@@ -560,6 +585,9 @@
         });
     </script>
 
+    <!-- Local -->
     <script src="./Assets/JS/course-detail.js"></script>
+
 </body>
+
 </html>

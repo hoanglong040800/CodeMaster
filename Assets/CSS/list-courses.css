@@ -123,6 +123,10 @@
 
 /* list-courses */
 
+.list-courses{
+    margin: 60px 0;
+}
+
 .grid_courses {
     max-width: 1200px;
     display: grid;

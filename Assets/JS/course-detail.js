@@ -1,5 +1,5 @@
 function openTab(evt, tabName) {
-    // Declare all variables
+
     var i, tabContentItem, tabLinks;
 
     // Get all elements with class="tabcontent" and hide them
@@ -12,7 +12,7 @@ function openTab(evt, tabName) {
     tabLinks = document.getElementsByClassName("tab__links");
     for (i = 0; i < tabLinks.length; i++) {
         tabLinks[i].className = tabLinks[i].className.replace("active", "");
-    }   
+    }
 
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(tabName).style.display = "block";
@@ -25,13 +25,15 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-    this.classList.toggle("active_acco");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-    } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-    }
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active_acco");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        }
+
+        else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
     });
 }
