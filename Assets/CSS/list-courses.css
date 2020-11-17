@@ -123,7 +123,7 @@
 
 /* list-courses */
 
-.list-courses{
+.list-courses {
     margin: 60px 0;
 }
 
@@ -138,15 +138,22 @@
     font-size: 0.9rem;
 }
 
-.card:hover {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card>a {
+.grid_courses>a {
     text-decoration: none;
     color: var(--main-text-color);
+}
+
+.grid_courses>a:hover {
+    transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+}
+
+.grid_courses .card:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card-footer {

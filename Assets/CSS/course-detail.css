@@ -106,7 +106,6 @@
     margin: 20px auto;
 }
 
-
 .content-item {
     display: flex;
     margin: 20px auto;
@@ -116,6 +115,7 @@
     font-size: 25px;
     color: var(--main-text-color);
 }
+
 .content-title {
     font-weight: bold;
 }
@@ -127,21 +127,26 @@
 /* curriculumn --> accordion*/
 
 .accordion {
-    background-color: #eee;
+    background-color: #ffffff;
     color: var(--main-text-color);
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    text-align: left;
     border: none;
-    outline: none;
+    border-radius: 5px;
+    text-align: left;
     transition: 0.4s;
+}
+
+#curriculum .lesson{
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 
-.active_acco, .accordion:hover {
-    background-color: #ccc;
+.accordion:focus{
+    outline: none;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -154,18 +159,22 @@
     transition: max-height 0.2s ease-out;
 }
 
+.accordion {
+    font-weight: bold;
+}
+
 .accordion:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
+    content: '+';
     float: right;
     margin-left: 5px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: var(--primary-color);
 }
 
 .active_acco:after {
-    content: "\2796";
-    /* Unicode character for "minus" sign (-) */
+    content: "\268A";
+    font-size: 1.3rem;
 }
 
 .lesson {
@@ -174,14 +183,14 @@
 
 /* ---- Lich hoc/ Giang vien ---- */
 
-#comment .img-teacher{
+#comment .img-teacher {
     width: 80px;
     height: 80px;
     border-radius: 100px;
     object-fit: cover;
 }
 
-/* courses-detail__sidebar  */
+/* ---- courses-detail__sidebar ----  */
 
 .courses-detail__sidebar {
     color: var(--main-text-color);
@@ -207,13 +216,22 @@
     font-size: 0.9rem;
 }
 
-.card:hover {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card>a {
+.grid_courses>a {
     text-decoration: none;
     color: var(--main-text-color);
+}
+
+.grid_courses>a:hover {
+    transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+}
+
+.grid_courses .card:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card-footer {
