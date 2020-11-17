@@ -18,6 +18,7 @@
 
 .auth-container .btn-primary{
     width: 100px;
+    font-weight: bold;
 }
 
 .auth-container .form-check-label{

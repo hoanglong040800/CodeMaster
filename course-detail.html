@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/Images/cm-1-logo.png">
 
     <!-- Online -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -105,7 +106,7 @@
             <div class="container">
                 <div class="row">
 
-                    <main class="course-detail__main col-12 col-md-8">
+                    <main class="course-detail__main col-12 col-md-8 mb-5">
                         <nav class="tabs__nav">
                             <div class="tabs__nav-item">
                                 <a href="#overview" class="tab__links" onclick="openTab(event, 'overview')">Tổng
@@ -359,11 +360,75 @@
                         </div><!-- tab content -->
                     </main>
 
-                    <aside class="courses-detail__sidebar col-12 col-md-4 my-5">
-                        <div class="container">
-                            <div class="content">
-                                <h5 class="content-title">Đăng ký thông tin để nhận tư vấn miễn phí</h5>
+                    <aside class="col-12 col-md-4">
+
+                        <!-- price -->
+                        <div class="auth-container mb-3" data-aos="fade-down">
+                            <div class="my-3 text-center" data-aos="fade-down">
+                                <h4> Khoá học Xây dựng website từ A-Z với ReactJS</h4>
+                                <h3>
+                                    <small> Giá: </small>
+                                    <span style="color: var(--primary-color);"> 5.000.000đ</span>
+                                </h3>
                             </div>
+
+                            <div class="d-flex justify-content-center" data-aos="fade-down">
+                                <button type="submit" class="btn btn-primary my-3"> Đăng ký khoá học</button>
+                            </div>
+                        </div>
+
+                        <!-- advise -->
+                        <div class="auth-container">
+                            <div class="py-5 text-center" data-aos="fade-down" data-aos-delay="500">
+                                <h4> Đăng ký nhận tư vấn miễn phí</h4>
+                            </div>
+
+                            <form action="" class="needs-validation" method="GET" novalidate data-aos="fade-up"
+                                data-aos-delay="300">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="uname" placeholder="Họ và tên" required>
+                                    <div class="valid-feedback"> Hợp lệ</div>
+                                    <div class="invalid-feedback"> Ô này không được trống!</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    <div class="valid-feedback"> Hợp lệ</div>
+                                    <div class="invalid-feedback"> Ô này không được trống!</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="pwd" placeholder="Số điện thoại"
+                                        required>
+                                    <div class="valid-feedback"> Hợp lệ</div>
+                                    <div class="invalid-feedback"> Ô này không được trống!</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sl"> Lĩnh vực cần tư vấn:</label>
+                                    <select class="form-control" id="sl" name="sl-field" required>
+                                        <option> Front-end</option>
+                                        <option> Back-end</option>
+                                        <option> Mobile</option>
+                                        <option> UI/UX</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sl"> Kinh nghiệm:</label>
+                                    <select class="form-control" id="sl" required>
+                                        <option> Người mới</option>
+                                        <option> Biết cơ bản</option>
+                                        <option> Chuyên sâu</option>
+                                    </select>
+                                </div>
+
+                                <div class="d-flex justify-content-center my-5">
+                                    <button type="submit" class="btn btn-primary"> Nhận tư vấn</button>
+                                </div>
+
+                            </form>
                         </div>
                     </aside>
 
@@ -590,7 +655,7 @@
 
     <script>
         AOS.init({
-            offset: 200,
+            offset: 150,
             duration: 1000,
         });
     </script>

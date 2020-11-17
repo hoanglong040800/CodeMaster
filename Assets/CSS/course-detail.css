@@ -143,8 +143,6 @@
     border-radius: 5px;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-
 .accordion:focus{
     outline: none;
 }
@@ -153,9 +151,8 @@
 
 .panel {
     padding: 0 18px;
-    background-color: white;
-    max-height: 0;
     overflow: hidden;
+    max-height: 0;
     transition: max-height 0.2s ease-out;
 }
 
@@ -174,14 +171,14 @@
 
 .active_acco:after {
     content: "\268A";
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .lesson {
     margin-bottom: 10px;
 }
 
-/* ---- Lich hoc/ Giang vien ---- */
+/* -- #comment -- */
 
 #comment .img-teacher {
     width: 80px;
@@ -190,12 +187,26 @@
     object-fit: cover;
 }
 
-/* ---- courses-detail__sidebar ----  */
+/* ---- Aside Contact ----  */
 
-.courses-detail__sidebar {
-    color: var(--main-text-color);
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
+.auth-container {
+    padding: 10px 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.auth-container .btn-primary{
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.auth-container label{
+    text-indent: 5px;
 }
 
 /* ---- Courses-Recommendation ---- */
