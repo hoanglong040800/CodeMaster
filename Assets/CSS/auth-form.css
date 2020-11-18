@@ -17,10 +17,15 @@
 }
 
 .auth-container .btn-primary{
-    width: 100px;
+    width: 200px;
+    height: 40px;
     font-weight: bold;
 }
 
 .auth-container .form-check-label{
     text-indent: 10px;
+}
+
+img[alt="img-auth"]{
+    width: 100%;
 }
