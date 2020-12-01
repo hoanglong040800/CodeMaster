@@ -29,3 +29,8 @@
 img[alt="img-auth"]{
     width: 100%;
 }
+
+img[alt="logo"]{
+    height: 70px;
+    padding: 0 0 10px 0;
+}
