@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/Images/cm-icon.png">
+
+    <!-- Online -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/9377e6dfb1.js"></script>
+
+    <!-- Local -->
+    <link rel="stylesheet" href="./Assets/CSS/base.css">
+    <link rel="stylesheet" href="./Assets/CSS/header.css">
+    <link rel="stylesheet" href="./Assets/CSS/footer.css">
+    <link rel="stylesheet" href="./Assets/CSS/animation.css">
+    <link rel="stylesheet" href="./Assets/CSS/home-page.css">
+    <link rel="stylesheet" href="./Assets/CSS/list-courses.css">
+
+    <title> Blog List</title>
+</head>
+
+<body>
+
+    <div class="bg-cover">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+
+                <a class="navbar-branch" href="./home-page.html">
+                    <img src="./Assets/Images/cm-1-logo.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-target="#navbarFullContent" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- navbar Full content -->
+                <div class="collapse navbar-collapse scale-in-ver-top-sm" id="navbarFullContent">
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Dropdown Cac khoa hoc -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Các khoá học
+                            </a>
+
+                            <div class="dropdown-menu scale-in-ver-top" aria-labelledby="dropdown-courses">
+                                <a class="dropdown-item" href="./list-courses.html"> Front-end Development</a>
+                                <a class="dropdown-item" href="./list-courses.html"> Back-end Development</a>
+                                <a class="dropdown-item" href="./list-courses.html"> Mobile Development</a>
+                            </div>
+                        </li>
+                        <!-- dropdown -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog-list.html"> Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html"> Về chúng tôi</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html"> Liên hệ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./log-in.html">
+                                <button class="btn btn-secondary btn--navbar"> Đăng nhập</button>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sign-up.html">
+                                <button class="btn btn-primary btn--navbar"> Đăng ký</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div> <!-- container -->
+        </nav> <!-- navbar-expand-lg -->
+
+
+        <section class="heading" style="background-image: url('./Assets/Images/heading-blog.png');">
+            <div class="container">
+                <div class="container-layout">
+                    <div class="heading_child">
+                        <div class="heading-nav">
+                            <div class="heading-item"><a href="./home-page.html">Trang chủ</a></div>
+                            <i class="fas fa-angle-right heading-icon"></i>
+                            <div class="heading-item" aria-current="page">Blog</div>
+                        </div>
+                        <h5 class="heading-title">Những bài blog của Code Master</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="search_tool">
+            <div class="container">
+                <div class="search_bar">
+
+                    <div class="search-filter">
+                        <select id="type_coures">
+                            <option value="All">All</option>
+                            <option value="front-end">Công nghệ</option>
+                            <option value="front-end">Chia sẻ</option>
+                            <option value="front-end">Front-end</option>
+                            <option value="back-end">Back-end</option>
+                            <option value="mobile">Mobile</option>
+                        </select>
+                    </div>
+
+                    <div class="search-input">
+                        <div class="search-icon">
+                            <i class="fas fa-search icon"></i>
+                        </div>
+                        <div class="input-box">
+                            <input id="input" type="text" placeholder="Tìm kiếm blog">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="list-courses">
+            <div class="container">
+                <div class="grid_courses">
+
+                    <!-- 1 -->
+                    <a href="">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <img class="card-img-top"
+                                src="https://blog.thangcodedao.com/wp-content/uploads/2016/09/app-success-infographic_-_appgeyser.png"
+                                alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title"> Lộ trình để một ứng dụng thành công</h5>
+                                <p class="card-text">
+                                    Trước xu thế hiện nay, số người dùng điện thoại ngày càng tăng dẫn đến nhu cầu ứng
+                                    dụng di động lên cao. Tuy nhiên, trước tài nguyên phần mềm phong phú để một ứng dụng
+                                    lọt vào “mắt xanh” của người tiêu dùng không phải là điều dễ dàng.
+                                </p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <small class="text-muted"> Công nghệ</small>
+                                <i class="fab fa-readme"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 2 -->
+                    <a href="">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <img class="card-img-top" src="https://thangphampt.files.wordpress.com/2018/12/image-3.png"
+                                alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title"> TypeScript vs JavaScript</h5>
+                                <p class="card-text">
+                                    TypeScript làm một ngôn ngữ lập trình mã nguồn mở được phát triển bởi Microsoft. Cha
+                                    đẻ của TypeScript là Anders Hejlsberg, một kiến trúc sư trưởng (Lead Architect) của
+                                    ngôn ngữ C# và là cha đẻ của ngôn ngữ lập trình Delphi và Turbo Pascal
+                                </p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <small class="text-muted"> Công nghệ, Back-end</small>
+                                <i class="fab fa-readme"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 3 -->
+                    <a href="">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <img class="card-img-top"
+                                src="https://topdev.vn/blog/wp-content/uploads/2020/10/javascript-co-ban-696x392.png"
+                                alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title"> Top 5 câu hỏi phỏng vấn về JavaScript
+                                </h5>
+                                <p class="card-text">
+                                    Lựa chọn trở thành một JavaScript Developer sau khi đã từng là dev ở các ngôn ngữ
+                                    lập trình khác như Java hay C++, vô hình chung có thể khiến các lập trình viên dễ
+                                    gặp tình huống thiếu kiến thức toàn diện về JavaScript và không update được những
+                                    thông tin mới liên quan đến công việc của mình
+                                </p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <small class="text-muted"> Front-end, Phỏng vấn</small>
+                                <i class="fab fa-readme"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 4 -->
+                    <a href="">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <img class="card-img-top"
+                                src="https://topdev.vn/blog/wp-content/uploads/2020/11/javascript-co-ban-696x464.jpg"
+                                alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title"> 5 tips để trở thành một coder giỏi hơn </h5>
+                                <p class="card-text">
+                                    Lập trình từ khi ra đời cho đến nay vẫn không ngừng phát triển. Bạn càng có kỹ năng
+                                    coding tốt thì càng có nhiều cơ hội làm việc tốt hơn. Quan trọng là hãy biết cách
+                                    “làm mới” mình mỗi ngày, đừng tự mãn với những gì mình có mà hãy cố gắng học hỏi
+                                    thêm thật nhiều kiến thức mới từ những kiến thức cơ bản như ngôn ngữ JavaScript đến
+                                    các ngôn ngữ, kỹ thuật chuyên môn hơn như Assembly, C,…. Dưới đây là 5 chiến thuật
+                                    tuyệt vời bạn có thể áp dụng để trở thành một dev giỏi hơn.
+                                </p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <small class="text-muted"> Mẹo</small>
+                                <i class="fab fa-readme"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 5 -->
+                    <a href="./course-detail.html">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <img class="card-img-top"
+                                src="https://duythanhcse.files.wordpress.com/2017/05/kotlin_h0.png?w=313&h=311"
+                                alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title"> Có nên học Kotlin?</h5>
+                                <p class="card-text">
+                                    Mấy ngày này cái tên Kotlin đã tạo nên một cơn địa chấn làm rung chuyển giới công
+                                    nghệ, bạn đã xem phim “Đường Sơn Đại Địa Chấn” chưa? nếu bộ phim vô cùng hay này đã
+                                    cướp đi không biết bao nhiêu nước mắt của khán giả thì Kotlin làm điều ngược lại, nó
+                                    lan tỏa không biết bao nhiêu nụ cười cho giới lập trình viên bởi nhiều tiện ích mà
+                                    nó đem lại.
+                                </p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <small class="text-muted"> Mobile, Chia sẻ</small>
+                                <i class="fab fa-readme"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 6 -->
+                    <a href="">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <img class="card-img-top"
+                                src="data:image/jpeg;base64,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"
+                                alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title"> “Luộc bài” đã giúp tôi trở thành 1 QA</h5>
+                                <p class="card-text">
+                                    Trước tiên mình xin nói là mình chẳng tự hào gì về chuyện này :D. Nhưng sau 6 năm
+                                    làm việc như 1 QA, mình muốn thẳng thắng nhìn lại bản thân mình. Rất nhiều người
+                                    từng hỏi “Sao bạn học CNTT không làm Dev mà làm QA?”.
+                                </p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <small class="text-muted"> Chia sẻ</small>
+                                <i class="fab fa-readme"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 7 -->
+                    <a href="">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <img class="card-img-top"
+                                src="https://topdev.vn/blog/wp-content/uploads/2020/12/final-keyboard-696x446.jpg"
+                                alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title"> Keyboard from Scratch: Từ A tới Z</h5>
+                                <p class="card-text">
+                                    Sau khi kết thúc hai phần trước, chúng ta đã có những kiến thức cơ bản về chiếc bàn
+                                    phím cơ, không để các bạn đợi lâu, ở phần này chúng ta sẽ thực sự bắt tay vào làm
+                                    một chiếc bàn phím hoàn chỉnh.
+                                </p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <small class="text-muted"> Chia sẻ</small>
+                                <i class="fab fa-readme"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 8 -->
+                    <a href="">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <img class="card-img-top"
+                                src="data:image/png;base64,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"
+                                alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title"> Tại sao dùng Vue.js</h5>
+                                <p class="card-text">
+                                    Khi bạn đọc được bài viết này, tôi tin rằng bạn là một người may mắn, đơn giản là vì
+                                    dưới đây tôi sẽ giới thiệu đến cho bạn một javascript framework có tên là Vue.js
+                                    đang phát triển chóng mặt dù mới chỉ xuất hiện lần đầu vào năm 2014 với phiên bản
+                                    Vue.js 1.0.
+                                </p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <small class="text-muted"> Back-end, Công nghệ</small>
+                                <i class="fab fa-readme"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 9 -->
+                    <a href="">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <img class="card-img-top"
+                                src="https://coder.com.vn/wp-content/uploads/2019/12/CleanCode.jpg"
+                                alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title"> Đặt tên trong code như nào cho bớt ngu?</h5>
+                                <p class="card-text">
+                                    Chuyện đặt tên thì chả ai dạy ở trường DH cả, toàn hứng như nào thì đặt như vậy
+                                    thôi. Nếu ông nào nói với tôi trường ông dạy cách đặt tên, quy tắc các kiểu thì chúc
+                                    mừng ông thế thôi.
+                                </p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <small class="text-muted"> Back-end, Công nghệ</small>
+                                <i class="fab fa-readme"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 10 -->
+                    <a href="">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <img class="card-img-top"
+                                src="https://topdev.vn/blog/wp-content/uploads/2020/12/step-2-1000-696x490.png"
+                                alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title"> Tóm tắt quá trình render của trình duyệt</h5>
+                                <p class="card-text">
+                                    Khi trình duyệt nhận một dữ liệu HTML, nó sẽ parse qua DOM node
+                                </p>
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <small class="text-muted"> Công nghệ</small>
+                                <i class="fab fa-readme"></i>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div> <!-- grid-courses -->
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="page-footer bg-dark text-white">
+
+            <!-- Main Footer -->
+            <div class="container text-center text-md-left" data-aos="fade-in" data-aos-delay="800">
+                <div class="row py-5">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <!-- Content -->
+                        <h4 class="text-uppercase font-weight-bold"> Code Master</h4>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p> Trung tâm hướng nghiệp và dạy lập trình uy tín hàng đầu Việt Nam. Code Master là nơi phù hợp
+                            cho mọi người muốn học những kiến thức thiết thực và được đi thực tập ngay sau khi hoàn
+                            thành.</p>
+
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold"> Khoá học</h6>
+
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                        <p><a href=""> Front-end Developer</a></p>
+
+                        <p><a href=""> Back-end Developer</a></p>
+
+                        <p><a href=""> Mobile Developer</a></p>
+
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold"> Code Master</h6>
+
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                        <p><a href=""> Blog</a></p>
+
+                        <p><a href=""> Về chúng tôi</a></p>
+
+                        <p><a href=""> Tuyển dụng</a></p>
+
+                        <p><a href=""> Chính sách & Điều khoản</a></p>
+
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold"> Liên hệ</h6>
+
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                        <p><i class="fas fa-home mr-3"></i> Khu phố 6, P.Linh Trung, Q.Thủ Đức, TP Hồ Chí Minh</p>
+
+                        <p><i class="fas fa-envelope mr-3"></i> info@codemaster.com</p>
+
+                        <p><i class="fas fa-phone mr-3"></i> (028) 372 52002</p>
+
+                        <p><i class="fas fa-print mr-3"></i> (028) 372 52148</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sub Footer -->
+            <div style="background-color: var(--third-color);">
+                <div class="container">
+                    <div class="row py-3 d-flex align-items-center">
+
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h6> &copy; Code Master 2020 đã đăng ký bản quyền.</h6>
+                        </div>
+
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                            <!-- Facebook -->
+                            <a href=""><i class="fab fa-facebook-f text-white px-3"></i></a>
+
+                            <!-- Youtube -->
+                            <a href=""><i class="fab fa-youtube text-white px-3"></i></a>
+
+                            <!-- Linkedin -->
+                            <a href=""><i class="fab fa-linkedin-in text-white px-3"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </div> <!-- bg-cover -->
+
+
+
+
+    <!-- Bootstrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 800,
+        });
+    </script>
+
+</body>
+
+</html>
