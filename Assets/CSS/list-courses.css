@@ -65,6 +65,7 @@
 
 .search_tool {
     height: 70px;
+    padding: 5px;
     position: relative;
     margin-top: -35px;
     z-index: 1;
@@ -86,6 +87,11 @@
 
 #type_coures {
     height: 40px;
+}
+
+#type_coures:focus{
+    outline: none;
+    margin: 0 0 0 5px;
 }
 
 .search-input {
@@ -119,6 +125,10 @@
     height: 50px;
     width: 100%;
     border: none;
+}
+
+#input:focus{
+    outline: none;
 }
 
 /* list-courses */
@@ -157,6 +167,10 @@
     -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.grid_courses>a:hover .card-title {
+    color: var(--primary-color);
+}
+
 .card-footer {
     border: none;
     background: transparent;
@@ -180,14 +194,16 @@
     overflow: hidden;
 }
 
-.grid_courses .fa-readme {
+.fa-readme, .fa-arrow-right {
     font-size: 1.1rem;
     padding: 0 5px;
     color: var(--primary-color);
     transition: 0.2s;
 }
 
-.grid_courses .fa-readme:hover {
+
+
+.fa-readme:hover, .fa-arrow-right:hover {
     color: var(--secondary-color);
     transform: scale(1.2, 1.2);
 }

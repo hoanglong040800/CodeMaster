@@ -16,11 +16,9 @@
     <link rel="stylesheet" href="./Assets/CSS/base.css">
     <link rel="stylesheet" href="./Assets/CSS/header.css">
     <link rel="stylesheet" href="./Assets/CSS/footer.css">
-    <link rel="stylesheet" href="./Assets/CSS/animation.css">
-    <link rel="stylesheet" href="./Assets/CSS/home-page.css">
-    <link rel="stylesheet" href="./Assets/CSS/list-courses.css">
+    <link rel="stylesheet" href="./Assets/CSS/course-detail.css">
 
-    <title> Blog List</title>
+    <title> Blog Detail</title>
 </head>
 
 <body>
@@ -88,7 +86,7 @@
         </nav> <!-- navbar-expand-lg -->
 
 
-        <section class="heading" style="background-image: url('./Assets/Images/heading-blog.png');">
+        <section class="heading">
             <div class="container">
                 <div class="container-layout">
                     <div class="heading_child">
@@ -99,142 +97,230 @@
                                 <a href="./blog-list.html"> Blog</a>
                             </div>
                         </div>
-                        <h5 class="heading-title">Những bài blog của Code Master</h5>
+                        <h5 class="heading-title"> 5 tips để trở thành một coder giỏi hơn mỗi ngày</h5>
                     </div>
                 </div>
             </div>
         </section>
 
 
-        <section class="search_tool">
-            <div class="container">
-                <div class="search_bar">
+        <section class="course-detail">
+            <div class="container mt-5 mb-3">
+                <div class="row">
 
-                    <div class="search-filter">
-                        <select id="type_coures">
-                            <option value="All">All</option>
-                            <option value="front-end">Công nghệ</option>
-                            <option value="front-end">Chia sẻ</option>
-                            <option value="front-end">Front-end</option>
-                            <option value="back-end">Back-end</option>
-                            <option value="mobile">Mobile</option>
-                        </select>
-                    </div>
+                    <main class="course-detail__main col-12 col-md-8">
 
-                    <div class="search-input">
-                        <div class="search-icon">
-                            <i class="fas fa-search icon"></i>
-                        </div>
-                        <div class="input-box">
-                            <input id="input" type="text" placeholder="Tìm kiếm blog">
-                        </div>
-                    </div>
+                        <div id="curriculum">
 
-                </div>
-            </div>
-        </section>
+                            <h3 class="content-header"> 5 tips để trở thành một coder giỏi hơn mỗi ngày</h3>
+                            <h5 class="font-italic mb-5"><small>24/12/2020, Chia sẻ</small></h5>
 
+                            <div class="lesson">
+                                <button class="accordion"><i class="fas fa-bars"></i>Mục lục bài viết</button>
+                                <div class="panel">
+                                    <ul class="lesson-list">
+                                        <li class="lesson-list-item"> Giới thiệu</li>
+                                        <li class="lesson-list-item"> 5 chiến thuật học hỏi tốt nhất</li>
 
-        <section class="list-courses">
-            <div class="container">
-                <div class="grid_courses">
+                                        <ul>
+                                            <li class="lesson-list-item"> Lên kết hoạch để vượt qua điểm yếu bản thân
+                                            </li>
+                                            <li class="lesson-list-item"> Luôn có một dự án trong quá trình</li>
+                                            <li class="lesson-list-item"> Tham khảo ý kiến với các lập trình viên đi
+                                                trước</li>
+                                            <li class="lesson-list-item"> Không chỉ dừng lại ở một lần viết</li>
+                                            <li class="lesson-list-item"> Không nên chỉ học một ngôn ngữ lập trình</li>
+                                        </ul>
 
+                                        <li class="lesson-list-item"> Kết luận</li>
+                                    </ul>
 
-                    <!-- 1 -->
-                    <a href="blog-detail.html">
-                        <div class="card" data-aos="fade-up" data-aos-delay="300">
-                            <img class="card-img-top"
-                                src="https://blog.thangcodedao.com/wp-content/uploads/2016/09/app-success-infographic_-_appgeyser.png"
-                                alt="Card image cap">
-
-                            <div class="card-body">
-                                <h5 class="card-title"> Lộ trình để một ứng dụng thành công</h5>
-                                <p class="card-text">
-                                    Trước xu thế hiện nay, số người dùng điện thoại ngày càng tăng dẫn đến nhu cầu ứng
-                                    dụng di động lên cao. Tuy nhiên, trước tài nguyên phần mềm phong phú để một ứng dụng
-                                    lọt vào “mắt xanh” của người tiêu dùng không phải là điều dễ dàng.
-                                </p>
+                                </div>
                             </div>
 
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <small class="text-muted"> Công nghệ</small>
-                                <i class="fab fa-readme"></i>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- 2 -->
-                    <a href="blog-detail.html">
-                        <div class="card" data-aos="fade-up" data-aos-delay="300">
-                            <img class="card-img-top" src="https://thangphampt.files.wordpress.com/2018/12/image-3.png"
-                                alt="Card image cap">
-
-                            <div class="card-body">
-                                <h5 class="card-title"> TypeScript vs JavaScript</h5>
-                                <p class="card-text">
-                                    TypeScript làm một ngôn ngữ lập trình mã nguồn mở được phát triển bởi Microsoft. Cha
-                                    đẻ của TypeScript là Anders Hejlsberg, một kiến trúc sư trưởng (Lead Architect) của
-                                    ngôn ngữ C# và là cha đẻ của ngôn ngữ lập trình Delphi và Turbo Pascal
-                                </p>
-                            </div>
-
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <small class="text-muted"> Công nghệ, Back-end</small>
-                                <i class="fab fa-readme"></i>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- 3 -->
-                    <a href="blog-detail.html">
-                        <div class="card" data-aos="fade-up" data-aos-delay="300">
-                            <img class="card-img-top"
-                                src="https://topdev.vn/blog/wp-content/uploads/2020/10/javascript-co-ban-696x392.png"
-                                alt="Card image cap">
-
-                            <div class="card-body">
-                                <h5 class="card-title"> Top 5 câu hỏi phỏng vấn về JavaScript
-                                </h5>
-                                <p class="card-text">
-                                    Lựa chọn trở thành một JavaScript Developer sau khi đã từng là dev ở các ngôn ngữ
-                                    lập trình khác như Java hay C++, vô hình chung có thể khiến các lập trình viên dễ
-                                    gặp tình huống thiếu kiến thức toàn diện về JavaScript và không update được những
-                                    thông tin mới liên quan đến công việc của mình
-                                </p>
-                            </div>
-
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <small class="text-muted"> Front-end, Phỏng vấn</small>
-                                <i class="fab fa-readme"></i>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- 4 -->
-                    <a href="blog-detail.html">
-                        <div class="card" data-aos="fade-up" data-aos-delay="300">
-                            <img class="card-img-top"
-                                src="https://topdev.vn/blog/wp-content/uploads/2020/11/javascript-co-ban-696x464.jpg"
-                                alt="Card image cap">
-
-                            <div class="card-body">
-                                <h5 class="card-title"> 5 tips để trở thành một coder giỏi hơn </h5>
-                                <p class="card-text">
-                                    Lập trình từ khi ra đời cho đến nay vẫn không ngừng phát triển. Bạn càng có kỹ năng
-                                    coding tốt thì càng có nhiều cơ hội làm việc tốt hơn. Quan trọng là hãy biết cách
+                            <div class="content mt-5">
+                                <h4 class="my-3">Giới thiệu</h4>
+                                <p>
+                                    Lập trình từ khi ra đời cho đến nay vẫn không ngừng phát triển. Bạn càng có kỹ
+                                    năng
+                                    coding tốt thì càng có nhiều cơ hội làm việc tốt hơn. Quan trọng là hãy biết
+                                    cách
                                     “làm mới” mình mỗi ngày, đừng tự mãn với những gì mình có mà hãy cố gắng học hỏi
-                                    thêm thật nhiều kiến thức mới từ những kiến thức cơ bản như ngôn ngữ JavaScript đến
-                                    các ngôn ngữ, kỹ thuật chuyên môn hơn như Assembly, C,…. Dưới đây là 5 chiến thuật
+                                    thêm thật nhiều kiến thức mới từ những kiến thức cơ bản như ngôn ngữ JavaScript
+                                    đến
+                                    các ngôn ngữ, kỹ thuật chuyên môn hơn như Assembly, C,…. Dưới đây là 5 chiến
+                                    thuật
                                     tuyệt vời bạn có thể áp dụng để trở thành một dev giỏi hơn.
                                 </p>
+
+                                <h4 class="my-3">5 chiến thuật học hỏi tốt nhất</h4>
+                                <h5 class="my-2">Lên kế hoạch để vượt qua điểm yếu của bản thân</h5>
+                                <p>
+                                    Một trong những kỹ năng quan trọng của dev là biết mình cần phải làm gì. IT là một
+                                    lĩnh vực rộng nên mỗi dev chỉ cần tập trung vào đúng lĩnh vực chuyên môn của mình và
+                                    làm tốt nhất có thể trong khả năng với một số nhiệm vụ hay ngôn ngữ lập trình nhất
+                                    định.
+                                </p>
+                                <p>
+                                    Khi mới bắt đầu bạn nên làm quen với ngôn ngữ JavaScript cơ bản. Đó là ngôn ngữ nền
+                                    tảng web chuẩn, được sử dụng phổ biến nhất và thường được ứng dụng trong build
+                                    mobile app. Bạn cũng nên cân nhắc về khả năng tài chính của mình để đăng kí thêm
+                                    những khóa học JavaScript online hoặc tự học để trau dồi kiến thức, khắc phục các
+                                    điểm yếu trong chuyên môn của mình.
+                                </p>
+                                <p>
+                                    Bên cạnh đó, khi làm việc và học tập, bạn nên cố gắng lựa chọn một môi trường yên
+                                    tĩnh, giúp bạn tập trung tối đa nhất. Vì theo kết quả nghiên cứu của Viện Công nghệ
+                                    Georgia, các lập trình viên có thể mất 10 đến 15 phút để quay trở lại với công việc
+                                    sau khi bị ngắt quãng, điều này có thể khiến các dev bị gián đoạn suy nghĩ và giải
+                                    quyết vấn đề kém hơn.
+                                </p>
+
+                                <h5 class="my-2">Luôn có một dự án trong quá trình hoạt động, nhất là với code mới</h5>
+                                <p>
+                                    Ngoài các công việc thường ngày, dev nên làm thêm các dự án phụ bên ngoài để nâng
+                                    cao khả năng cũng như giới hạn của bản thân. Việc làm thêm những task mới chắc chắn
+                                    sẽ giúp bạn học hỏi rất nhiều điều bổ ích khác như một kỹ thuật mới, ngôn ngữ mới,
+                                    kiến thức mới chẳng hạn. Học tập chưa bao giờ là việc dễ dàng, nhất là trong lĩnh
+                                    vực IT, từ ngôn ngữ lập trình JavaScript, C/C++,… đến các kỹ thuật chuyên môn khác,
+                                    đều cần sự kiên trì, chăm chỉ rèn luyện. Hãy cố gắng giữ cho bản thân động lực cao
+                                    nhất để hoàn thành nhiều việc hơn, từ đó nâng cấp trình độ của bạn lên một vị trí
+                                    mới.
+                                </p>
+
+                                <h5 class="my-2">Tham khảo ý kiến với các lập trình viên đi trước bất cứ khi nào có thể
+                                </h5>
+                                <p>
+                                    Bạn có thể học hỏi được nhiều thứ từ những tiền bối trong nghề vì họ có nhiều kinh
+                                    nghiệm làm việc hơn. Bạn có thể nhờ các đồng nghiệp trong công ty hỗ trợ và giải
+                                    thích khi gặp một số công việc hay chưa hiểu rõ về JavaScript cơ bản,… vấn đề mà bạn
+                                    không quen thuộc. Hoặc bạn có thể tham khảo thêm ý kiến của những người đi trước
+                                    thông qua các nền tảng trực tuyến như đặt câu hỏi trên Google, Reddit, YouTube, blog
+                                    hoặc Codecademy.
+                                </p>
+                                <p>
+                                    Hãy học hỏi cách người khác viết code. Đó là một nguồn tài nguyên tuyệt vời để bạn
+                                    mở mang tầm mắt và suy nghĩ của mình, học hỏi thêm nhiều thứ từ cách mà người khác
+                                    xử lý vấn đề.
+                                </p>
+
+                                <h5 class="my-2">Không chỉ dừng lại ở một lần viết code</h5>
+                                <p>
+                                    Code luôn luôn có thể cải thiện được để nó hoạt động nhanh hơn, đáng tin cậy hơn.
+                                    Nếu bạn thật sự muốn đạt trình độ bậc thầy coding, bạn nên viết code cho một dự án
+                                    ít nhất 3 lần. Nghĩa là sau khi viết code 1 lần và nó đã chạy được, bạn hãy viết
+                                    tiếp thêm lần nữa, viết mới hoàn toàn. Cứ như thế, sau 3 lần bạn sẽ tìm ra được đâu
+                                    mới là sản phẩm thật sự chất lượng, đáp ứng đầy đủ các thông số kỹ thuật cho yêu cầu
+                                    của dự án.
+                                </p>
+
+                                <h5 class="my-2">Không nên chỉ học một ngôn ngữ lập trình</h5>
+                                <p>
+                                    Mỗi ngôn ngữ lập trình (JavaScript, Golang, Java,…) đều có ưu và nhược điểm riêng,
+                                    các dev không nên có suy nghĩ phiến diện rằng chỉ có ngôn ngữ này thì tốt và ngôn
+                                    ngữ khác thì vô dụng và không đáng để học hỏi. Học một ngôn ngữ mới mang lại cho bạn
+                                    một góc nhìn mới và có thể giúp bạn xử lý các dự án đang triển khai với chuyên môn
+                                    cao hơn.
+                                </p>
+                                <p>
+                                    Bạn có thể bắt đầu học thêm về ngôn ngữ C / C ++, JavaScript, Ruby, Python, Django,
+                                    Pascal và NodeJS,… Học thêm ngôn ngữ lập trình khác, với cách tiếp cận và tư duy
+                                    khác nhau sẽ cho bạn cơ hội hiểu được vấn đề ở nhiều góc độ khác nhau. Giúp các dev
+                                    mở rộng suy nghĩ và sáng tạo hơn trong quá trình làm việc của mình.
+                                </p>
+
+                                <h4 class="my-3">Kết luận</h4>
+                                <p>
+                                    Có nhiều cách khác nhau để bạn có thể nâng cao trình độ coding của mình và tìm được
+                                    việc làm phù hợp tại các công ty như Gear Inc. Hãy cân nhắc với các tip hữu ích nhất
+                                    và từ đó rút ra kinh nghiệm làm việc phù hợp nhất với bản thân mình nhé!
+                                </p>
+
+                                <h5 class="text-right font-italic">
+                                    <small>Nguồn tham khảo:
+                                        <a
+                                            href="https://topdev.vn/blog/5-tips-de-tro-thanh-mot-coder-javascript-gioi-hon-moi-ngay/#ftoc-heading-5">
+                                            topdev.vn
+                                        </a>
+                                    </small>
+                                </h5>
+
                             </div>
 
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <small class="text-muted"> Chia sẻ</small>
-                                <i class="fab fa-readme"></i>
-                            </div>
                         </div>
-                    </a>
+
+
+                    </main>
+
+                    <aside class="col-12 col-md-4">
+
+                        <!-- advise -->
+                        <div class="auth-container">
+                            <div class="py-5 text-center" data-aos="fade-down" data-aos-delay="500">
+                                <h4> Đăng ký nhận tư vấn miễn phí</h4>
+                            </div>
+
+                            <form action="" class="needs-validation" method="GET" novalidate data-aos="fade-up"
+                                data-aos-delay="300">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="uname" placeholder="Họ và tên" required>
+                                    <div class="valid-feedback"> Hợp lệ</div>
+                                    <div class="invalid-feedback"> Ô này không được trống!</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    <div class="valid-feedback"> Hợp lệ</div>
+                                    <div class="invalid-feedback"> Ô này không được trống!</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="pwd" placeholder="Số điện thoại"
+                                        required>
+                                    <div class="valid-feedback"> Hợp lệ</div>
+                                    <div class="invalid-feedback"> Ô này không được trống!</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sl"> Lĩnh vực cần tư vấn:</label>
+                                    <select class="form-control" id="sl" name="sl-field" required>
+                                        <option> Front-end</option>
+                                        <option> Back-end</option>
+                                        <option> Mobile</option>
+                                        <option> UI/UX</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sl"> Kinh nghiệm:</label>
+                                    <select class="form-control" id="sl" required>
+                                        <option> Người mới</option>
+                                        <option> Biết cơ bản</option>
+                                        <option> Chuyên sâu</option>
+                                    </select>
+                                </div>
+
+                                <div class="d-flex justify-content-center my-5">
+                                    <button type="submit" class="btn btn-primary"> Nhận tư vấn</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="course-recommend">
+            <div class="container">
+                <div class="py-5" data-aos="fade-up">
+                    <h3> Những bài blog liên quan</h3>
+                </div>
+
+                <div class="grid_courses">
 
                     <!-- 5 -->
                     <a href="blog-detail.html">
@@ -331,57 +417,11 @@
                         </div>
                     </a>
 
-                    <!-- 9 -->
-                    <a href="blog-detail.html">
-                        <div class="card" data-aos="fade-up" data-aos-delay="300">
-                            <img class="card-img-top"
-                                src="https://coder.com.vn/wp-content/uploads/2019/12/CleanCode.jpg"
-                                alt="Card image cap">
-
-                            <div class="card-body">
-                                <h5 class="card-title"> Đặt tên trong code như nào cho bớt ngu?</h5>
-                                <p class="card-text">
-                                    Chuyện đặt tên thì chả ai dạy ở trường DH cả, toàn hứng như nào thì đặt như vậy
-                                    thôi. Nếu ông nào nói với tôi trường ông dạy cách đặt tên, quy tắc các kiểu thì chúc
-                                    mừng ông thế thôi.
-                                </p>
-                            </div>
-
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <small class="text-muted"> Back-end, Công nghệ</small>
-                                <i class="fab fa-readme"></i>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- 10 -->
-                    <a href="blog-detail.html">
-                        <div class="card" data-aos="fade-up" data-aos-delay="300">
-                            <img class="card-img-top"
-                                src="https://topdev.vn/blog/wp-content/uploads/2020/12/step-2-1000-696x490.png"
-                                alt="Card image cap">
-
-                            <div class="card-body">
-                                <h5 class="card-title"> Tóm tắt quá trình render của trình duyệt</h5>
-                                <p class="card-text">
-                                    Khi trình duyệt nhận một dữ liệu HTML, nó sẽ parse qua DOM node
-                                </p>
-                            </div>
-
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <small class="text-muted"> Công nghệ</small>
-                                <i class="fab fa-readme"></i>
-                            </div>
-                        </div>
-                    </a>
-
-
-                </div> <!-- grid-courses -->
-            </div>
+                </div> <!-- grid courses -->
+            </div> <!-- container -->
         </section>
 
 
-        <!-- Footer -->
         <footer class="page-footer bg-dark text-white">
 
             <!-- Main Footer -->
@@ -438,7 +478,7 @@
 
                         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
 
-                        <p><i class="fas fa-home mr-3"></i> Khu phố 6, P.Linh Trung, Q.Thủ Đức, TP Hồ Chí Minh</p>
+                        <p><i class="fas fa-home mr-3"></i> Khu phố 6, Q.Linh Trung, Q.Thủ Đức, TP Hồ Chí Minh</p>
 
                         <p><i class="fas fa-envelope mr-3"></i> info@codemaster.com</p>
 
@@ -478,7 +518,9 @@
 
         </footer>
 
-    </div> <!-- bg-cover -->
+
+    </div>
+
 
 
 
@@ -501,10 +543,13 @@
 
     <script>
         AOS.init({
-            offset: 100,
+            offset: 50,
             duration: 800,
         });
     </script>
+
+    <!-- Local -->
+    <script src="./Assets/JS/course-detail.js"></script>
 
 </body>
 
