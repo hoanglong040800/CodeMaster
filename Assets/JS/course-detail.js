@@ -3,13 +3,13 @@ function openTab(evt, tabName) {
     var i, tabContentItem, tabLinks;
 
     // Get all elements with class="tabcontent" and hide them
-    tabContentItem = document.getElementsByClassName("tabs__content-item");
+    tabContentItem = document.querySelectorAll(".tabs__content-item");
     for (i = 0; i < tabContentItem.length; i++) {
         tabContentItem[i].style.display = "none";
     }
 
     // Get all elements with class="tablinks" and remove the class "active"
-    tabLinks = document.getElementsByClassName("tab__links");
+    tabLinks = document.querySelectorAll(".tab__links");
     for (i = 0; i < tabLinks.length; i++) {
         tabLinks[i].className = tabLinks[i].className.replace("active", "");
     }
@@ -19,7 +19,7 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
-document.getElementById('curriculum').click();
+document.querySelector('#defaultTab').click();
 
 var acc = document.getElementsByClassName("accordion");
 var i;

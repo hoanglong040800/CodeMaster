@@ -113,22 +113,22 @@
 
                         <nav class="tabs__nav">
                             <div class="tabs__nav-item">
-                                <a href="#overview" class="tab__links" onclick="openTab(event, 'overview')">Tổng
-                                    quan</a>
+                                <div class="tab__links" onclick="openTab(event, 'overview')">Tổng
+                                    quan</div>
                             </div>
                             <div class="tabs__nav-item">
-                                <a href="#curriculum" class="tab__links active"
-                                    onclick="openTab(event, 'curriculum')">Chương trình học</a>
+                                <div class="tab__links active" id="defaultTab"
+                                    onclick="openTab(event, 'curriculum')">Chương trình học</div>
                             </div>
                             <div class="tabs__nav-item">
-                                <a href="#comment" class="tab__links" onclick="openTab(event, 'comment')"> Lịch học/
-                                    Giảng viên</a>
+                                <div class="tab__links" onclick="openTab(event, 'comment')"> Lịch học/
+                                    Giảng viên</div>
                             </div>
                         </nav>
 
                         <div class="tabs__content">
 
-                            <div id="overview" class="tabs__content-item" style="display: none;">
+                            <div id="overview" class="tabs__content-item" ">
                                 <div class="content">
                                     <h3 class="content-header"> Giới thiệu khoá học</h3>
                                     <div class="content-item">
@@ -305,7 +305,7 @@
                                 </div>
                             </div>
 
-                            <div id="comment" class="tabs__content-item" style="display: none;">
+                            <div id="comment" class="tabs__content-item" ">
                                 <div class="heading_child">
 
                                     <div class="d-flex">
