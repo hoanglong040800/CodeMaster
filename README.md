@@ -7,3 +7,6 @@ A code teaching website built with [Bootstrap 4](https://getbootstrap.com/) and 
 ## Demo
 
 Link to website: [Web Code Master](https://web-code-master.herokuapp.com) 
+
+## Pages
+![diagram pages structure](https://github.com/hoanglong040800/web_CodeMaster/blob/main/demo/Code-Master-pages-structure.png)
